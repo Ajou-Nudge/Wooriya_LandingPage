@@ -17,7 +17,7 @@ const Foursquare: React.FC<FoursquareProps> = ({
           src={FoursquareImage}
           layout='fill'
           alt={`Wooriya ${FoursquareName}`}
-          style={{ borderRadius: '0.75rem' }} // 12px in rem (12 / 16 = 0.75)
+          style={{ borderRadius: '0.75rem' }}
         />
       </div>
       <div className='text-container'>

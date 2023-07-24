@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({
     >
       <Image
         src={`/${ImageName}`}
-        width={64}
+        width={63}
         height={64}
         alt={`/Wooriya ${ImageName}`}
       />
