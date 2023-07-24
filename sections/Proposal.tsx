@@ -7,13 +7,22 @@ import { useMediaQuery } from "react-responsive"
 import MiniTitle from '@/components/MiniTitle'
 
 const Proposal = () => {
-  
+  const [rootFontSize, setRootFontSize] = useState(16); // Set a default value (usually 16px)
+
+  useEffect(() => {
+    // Get the root font size from the window object
+    const rootFontSizeValue = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    setRootFontSize(rootFontSizeValue);
+  }, []);
+
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
       const mobile = useMediaQuery({query: "(max-width: 1400px)"});
       const pc = useMediaQuery({query: "(min-width:1401px)"})
       
+      const remToPixels = (rem:number) : number => rem * rootFontSize;
+
       useEffect(()=>{
           if(mobile) {
                 setIsMobile(mobile);
@@ -92,14 +101,14 @@ const Proposal = () => {
                       <div className='flex gap-1 justify-center mt-15'>
                               <Image
                                 src="/logo.svg"
-                                width={20}
-                                height={20}
+                                width={remToPixels(3)}
+                                height={remToPixels(3)}
                                 alt="Wooriya logo"
                               />
                               <Image
                                 src="/wooriya.svg"
-                                width={100}
-                                height={100}
+                                width={remToPixels(15)}
+                                height={remToPixels(15)}
                                 alt="wooriya letters"
                               />
                             </div>

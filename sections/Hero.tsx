@@ -7,6 +7,15 @@ import { Link } from 'react-scroll';
 import { useMediaQuery } from "react-responsive"
 
 const Hero: React.FC = () => {
+    const [rootFontSize, setRootFontSize] = useState(16); // Set a default value (usually 16px)
+
+    useEffect(() => {
+      // Get the root font size from the window object
+      const rootFontSizeValue = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      setRootFontSize(rootFontSizeValue);
+    }, []);
+    
+    const remToPixels = (rem:number) : number => rem * rootFontSize;
 
     const [isMobile, setIsMobile] = useState(false);
     const [isPc, setIsPc] = useState(false);
@@ -79,16 +88,16 @@ const Hero: React.FC = () => {
                     <div>
                         <Image
                         src="/logo.svg"
-                        width={25}
-                        height={25}
+                        width={remToPixels(4)}
+                        height={remToPixels(4)}
                         alt="Wooriya logo"
                         />
                     </div>
                     <div>
                         <Image
                         src="/wooriya.svg"
-                        width={125}
-                        height={125}
+                        width={remToPixels(20)}
+                        height={remToPixels(20)}
                         alt="wooriya letters"
                         />
                     </div>
@@ -127,7 +136,7 @@ const Hero: React.FC = () => {
                         duration={500}
                         className="cursor-pointer"
                         >
-                        <Image src="/arrow.svg" width={60} height={60} alt="white arrow" />
+                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow" />
                         </Link>
                 </div>
                 

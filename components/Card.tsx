@@ -1,5 +1,6 @@
 // Card.tsx
-import React from 'react';
+'use clinet'
+import React, { useState, useEffect }from 'react';
 import Image from 'next/image';
 
 interface CardProps {
@@ -20,6 +21,15 @@ const Card: React.FC<CardProps> = ({
   index = 0, // index 기본값을 0으로 설정
 }) => {
   const dividedContent = CardContent.split('/');
+  const [rootFontSize, setRootFontSize] = useState(16); // Set a default value (usually 16px)
+
+  const remToPixels = (rem:number) : number => rem * rootFontSize;
+
+  useEffect(() => {
+    // Get the root font size from the window object
+    const rootFontSizeValue = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    setRootFontSize(rootFontSizeValue);
+  }, []);
 
   return (
     <div
@@ -28,8 +38,8 @@ const Card: React.FC<CardProps> = ({
     >
       <Image
         src={`/${ImageName}`}
-        width={63}
-        height={64}
+        width={remToPixels(5)}
+        height={remToPixels(5)}
         alt={`/Wooriya ${ImageName}`}
       />
       <div className='text-coolgray-cg-700 text-center mt-2'>
