@@ -29,13 +29,13 @@ const Provide = () => {
           <div className='w-1/2 mt-5'>
             <Foursquare
               FoursquareName='의료'
-              FoursquareImage='./Doctor.svg'
+              FoursquareImage='/Doctor.svg'
             />
           </div>
           <div className='w-1/2 -mt-25'>
             <Foursquare
               FoursquareName='장비 대여'
-              FoursquareImage='./Rental.svg'
+              FoursquareImage='/Rental.svg'
             />
           </div>
 
@@ -43,13 +43,13 @@ const Provide = () => {
           <div className='w-1/2'>
             <Foursquare
               FoursquareName='행사'
-              FoursquareImage='./Festival.svg'
+              FoursquareImage='/Festival.svg'
             />
           </div>
           <div className='w-1/2 -mt-30'>
             <Foursquare
               FoursquareName='공간 대여'
-              FoursquareImage='./SpaceRental.svg'
+              FoursquareImage='/SpaceRental.svg'
             />
           </div>
 
@@ -57,13 +57,13 @@ const Provide = () => {
           <div className='w-1/2 '>
             <Foursquare
               FoursquareName='코칭'
-              FoursquareImage='./Coaching.svg'
+              FoursquareImage='/Coaching.svg'
             />
           </div>
           <div className='w-1/2 -mt-30'>
             <Foursquare
               FoursquareName='강연'
-              FoursquareImage='./Lecture.svg'
+              FoursquareImage='/Lecture.svg'
             />
           </div>
 
@@ -71,13 +71,13 @@ const Provide = () => {
           <div className='w-1/2'>
             <Foursquare
               FoursquareName='의료'
-              FoursquareImage='./Doctor.svg'
+              FoursquareImage='/Doctor.svg'
             />
           </div>
           <div className='w-1/2 -mt-30'>
             <Foursquare
               FoursquareName='데일리 체험'
-              FoursquareImage='./Experience.svg'
+              FoursquareImage='/Experience.svg'
             />
           </div>
         </div>

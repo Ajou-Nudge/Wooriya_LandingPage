@@ -11,13 +11,13 @@ const Hero: React.FC = () => {
       }, []);
   return (
     <section className="section_container hero-container">
-        <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 gap-7 flex-shrink-0  gap-1">
+        <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 flex-shrink-0  gap-1">
             <Navbar />
         </div>
         
         <div className='mt-20 font-bold'>
             <div className='text-white flex justify-center text-5xl mt-1 bottom-2'>
-                다양한 제휴와 해택으로
+                다양한 제휴와 혜택으로
             </div>
             
             <div className='text-white flex justify-center text-5xl mt-2'>
@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
        </div>
        
         
-        <div className='mt-110 text-white flex justify-center'>우리모임 해택을 확인해보세요</div>
+        <div className='mt-110 text-white flex justify-center flex-small-screen`'>우리모임 해택을 확인해보세요</div>
         
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-2 flex-small-screen`">
             <Link
             to="benefit-section"
             smooth={true}
