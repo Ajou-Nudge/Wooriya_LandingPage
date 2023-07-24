@@ -17,20 +17,23 @@ const Benefit: React.FC = () => {
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
-      const mobile = useMediaQuery({query: "(max-width: 400px)"});
-      const pc = useMediaQuery({query: "(min-width:1080px)"})
+      const mobile = useMediaQuery({query: "(max-width: 1400px)"});
+      const pc = useMediaQuery({query: "(min-width:1401px)"})
       
       useEffect(()=>{
-            if(mobile) setIsMobile(mobile);
-            if(pc) setIsPc(pc)
-
-            console.log("mobile ", mobile)
-            console.log("pc ",pc)
+            if(mobile) {
+                  setIsMobile(mobile);
+                  setIsPc(false);
+            }
+            if(pc) {
+                  setIsPc(pc);
+                  setIsMobile(false);
+            }
       },[mobile,pc])
 
 
       return (
-      <section className='section_container bg-coolgray-cg-20' aria-braillelabelid='benefit' id="benefit-section">
+      <section className='section_container bg-coolgray-cg-20' id="benefit-section">
             {isPc && <div>            
                   <div className='flex flex-col items-center justify-center'>
                         <div className='text-5xl mt-40 font-bold'>구성원 모두가 누리는</div>
@@ -46,6 +49,16 @@ const Benefit: React.FC = () => {
                         />
                         ))}
                   </div>
+
+                  <div className='flex justify-center mt-10'>
+                  <CustomButton
+                        ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
+                        FontStyle='text-primary text-center text-2xl font-bold'
+                        ButtonContent='다양한 혜택들 받기'
+                        href='https://www.wooriya.com/'
+                  />
+                  </div>
+
             </div>
             }
 
@@ -64,16 +77,17 @@ const Benefit: React.FC = () => {
                         />
                   ))}
                   </div>
+                  <div className='flex justify-center mt-10'>
+                  <CustomButton
+                        ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
+                        FontStyle='text-primary text-center text-4xl font-bold'
+                        ButtonContent='다양한 혜택들 받기'
+                        href='https://www.wooriya.com/'
+                  />
+                  </div>
             </div>)}
            
-            <div className='flex justify-center mt-10'>
-            <CustomButton
-            ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-            FontStyle='text-primary text-center text-4xl'
-            ButtonContent='다양한 혜택들 받기'
-            href='https://www.wooriya.com/'
-            />
-            </div>
+          
       </section>
       )
 }

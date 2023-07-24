@@ -194,25 +194,30 @@ html{
     margin-top: 20rem;
 }
 /* breaking point */
-@media (max-width: 820px) {
+
+@media (max-width: 400px) {
     html{
-        font-size: 16px
+        font-size: 7px
     }
+     /* 카드 기본*/
     .card_container{
         width: 140px;
         height: 140px;
         padding: 12px 0px;
     }
+    /* 버튼 기본*/
     .button_container{
         width: 300px;
         height: 48px;
         padding: 9px 0px;
     }
+     /* 검정 버튼 기본*/
     .black_button_container{
         width: 220px;
         height: 37px;
         padding: 5px 0px;
     }
+
     /* 기본 카드 스타일 */
     .foursquare-card {
         width: 17rem; /* 기본 카드 크기 */
@@ -238,11 +243,12 @@ html{
         font-size: 1.75rem;
         z-index: 1;
     }
-    
+
     .backgroundLinearGradient {
         background: linear-gradient(118deg, #2CC8A2 0%, #015EE9 100%);
     }
 
+    /* 알록달록 박스 기본*/
     .color-Box{
         width: 42rem;   /* 600px / 16px = 37.5rem */
         height: 50rem;  /* 754px / 16px = 47.125rem */
@@ -251,16 +257,93 @@ html{
         margin-top: 3rem;
     }
 
+    /* 첫장 버튼 기본*/
     .Hero_button_container{
         width: 280px;
         height: 45px;
         padding: 8px 64px;
     }
-}
-
-@media (max-width: 400px) {
-    html{
-        font-size: 7px
+    
+    .Step_Card_container{
+        width: 34.5rem;
+        height: 11.25rem;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
     }
 }
 
+/* 400px 이상 600px 이하의 범위에 대한 스타일 */
+@media (min-width: 401px) and (max-width: 600px) {
+    html {
+      font-size: 9px;
+    }
+    .black_button_container{
+        width: 220px;
+        height: 37px;
+        padding: 5px 0px;
+    }
+
+    .Step_Card_container{
+        width: 42.5rem;
+        height: 11.25rem;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+     /* 기본 카드 스타일 */
+     .foursquare-card {
+        width: 18rem; /* 기본 카드 크기 */
+        height: 18rem;
+        border-radius: 2rem; /* 카드 테두리 둥글게 처리 */
+        overflow: hidden; /* 카드 영역을 넘어간 이미지 숨김 */
+    }
+      /* Text 스타일은 그대로 유지 */
+    .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: white;
+        font-size: 1.75rem;
+        z-index: 1;
+    }
+
+  }
+
+  @media (min-width: 601px) and (max-width: 720px){
+    html {
+        font-size: 14px;
+      }
+  }
+
+  @media (min-width: 721px) and (max-width: 820px){
+    html {
+        font-size: 11px;
+      }
+  }
+
+  @media (min-width: 821px) and (max-width: 1080px){
+    html {
+        font-size: 9px;
+      }
+  }
+
+
+  @media (min-width: 1081px) and (max-width: 1200px){
+    html {
+        font-size: 9px;
+      }
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px){
+    html {
+        font-size: 11px;
+      }
+  }
+
+  @media (min-width: 1400px) {
+    html{
+        font-size: 16px;
+    }
+  }

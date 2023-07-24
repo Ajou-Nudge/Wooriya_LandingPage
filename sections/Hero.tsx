@@ -11,15 +11,18 @@ const Hero: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isPc, setIsPc] = useState(false);
 
-    const mobile = useMediaQuery({query: "(max-width: 400px)"});
-    const pc = useMediaQuery({query: "(min-width:1080px)"})
+    const mobile = useMediaQuery({query: "(max-width: 1400px)"});
+    const pc = useMediaQuery({query: "(min-width:1401px)"})
     
     useEffect(()=>{
-          if(mobile) setIsMobile(mobile);
-          if(pc) setIsPc(pc)
-
-          console.log("mobile ", mobile)
-          console.log("pc ",pc)
+        if(mobile) {
+                setIsMobile(mobile);
+                setIsPc(false);
+        }
+        if(pc) {
+                setIsPc(pc);
+                setIsMobile(false);
+        }
     },[mobile,pc])
 
 
@@ -56,7 +59,7 @@ const Hero: React.FC = () => {
                         href='https://www.wooriya.com/'
                     ></CustomButton>
                 </div>
-                <div className='mt-110 text-white flex justify-center flex-small-screen`'>우리모임 해택을 확인해보세요</div>
+                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 해택을 확인해보세요</div>
     
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link

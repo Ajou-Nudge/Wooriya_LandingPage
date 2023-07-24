@@ -12,14 +12,14 @@ const Foursquare: React.FC<FoursquareProps> = ({
 }) => {
   return (
     <div className='foursquare-card'>
-      <div className='image-container'>
+      
         <Image
           src={FoursquareImage}
-          layout='fill'
           alt={`Wooriya ${FoursquareName}`}
+          fill
           style={{ borderRadius: '0.75rem' }}
         />
-      </div>
+     
       <div className='text-container'>
         {FoursquareName}
       </div>

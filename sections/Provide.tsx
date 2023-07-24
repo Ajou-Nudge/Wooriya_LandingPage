@@ -4,21 +4,25 @@ import CustomButton from '@/components/CustomButton';
 import React,{useState, useEffect} from 'react';
 import Foursquare from '@/components/Foursquare';
 import { useMediaQuery } from "react-responsive"
+import Image from 'next/image';
 import MiniTitle from '@/components/MiniTitle';
 
 const Provide = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 400px)"});
-  const pc = useMediaQuery({query: "(min-width:1080px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1400px)"});
+  const pc = useMediaQuery({query: "(min-width:1401px)"})
   
   useEffect(()=>{
-        if(mobile) setIsMobile(mobile);
-        if(pc) setIsPc(pc)
-
-        console.log("mobile ", mobile)
-        console.log("pc ",pc)
+            if(mobile) {
+              setIsMobile(mobile);
+              setIsPc(false);
+            }
+            if(pc) {
+              setIsPc(pc);
+              setIsMobile(false);
+            }
   },[mobile,pc])
 
   return (
@@ -26,7 +30,7 @@ const Provide = () => {
       {isPc && <div>
           <div className='flex ml-80 mr-0'>
             {/* Left column */}
-            <div className='flex-1 mt-80 flex'>
+            <div className='mt-80 flex flex-col'>
               <Title
                 SubTitleContent='우리야가 제공하는 서비스는?'
                 TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
@@ -34,37 +38,44 @@ const Provide = () => {
               <div className="mt-4">
                 <CustomButton
                   ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-                  FontStyle='text-primary text-center text-2xl'
+                  FontStyle='text-primary text-center text-2xl font-bold'
                   ButtonContent='다양한 혜택들 받기'
                   href='https://www.wooriya.com/'
                 />
               </div>
           </div>
-
+          
                 {/* Right column */}
           <div className='flex-1 flex flex-wrap mr-60 ml-20'>
               {/* First row */}
-              <div className='w-1/2 mt-5'>
+              <div className='mt-5'>
                 <Foursquare
                   FoursquareName='의료'
                   FoursquareImage='/Doctor.svg'
                 />
               </div>
-              <div className='w-1/2 -mt-25'>
-                <Foursquare
-                  FoursquareName='장비 대여'
-                  FoursquareImage='/Rental.svg'
-                />
+              <div className='-mt-20'>
+                <div className='foursquare-card'>
+                    <div className='image-container rounded-md'>
+                    <Image
+                      src="/Rental.svg"
+                      layout='fill'
+                      alt={`Wooriya Rental`}
+                    ></Image>
+                    </div>
+                    <div className='text-container'>
+                      장비 대여
+                    </div>
+               </div>
               </div>
-
               {/* Second row */}
-              <div className='w-1/2'>
+              <div className=''>
                 <Foursquare
                   FoursquareName='행사'
                   FoursquareImage='/Festival.svg'
                 />
               </div>
-              <div className='w-1/2 -mt-30'>
+              <div className='-mt-40'>
                 <Foursquare
                   FoursquareName='공간 대여'
                   FoursquareImage='/SpaceRental.svg'
@@ -72,13 +83,13 @@ const Provide = () => {
               </div>
 
               {/* Third row */}
-              <div className='w-1/2 '>
+              <div className=' '>
                 <Foursquare
                   FoursquareName='코칭'
                   FoursquareImage='/Coaching.svg'
                 />
               </div>
-              <div className='w-1/2 -mt-30'>
+              <div className='-mt-40'>
                 <Foursquare
                   FoursquareName='강연'
                   FoursquareImage='/Lecture.svg'
@@ -86,13 +97,13 @@ const Provide = () => {
               </div>
 
               {/* Fourth row */}
-              <div className='w-1/2'>
+              <div className=''>
                 <Foursquare
                   FoursquareName='의료'
                   FoursquareImage='/Doctor.svg'
                 />
               </div>
-              <div className='w-1/2 -mt-30'>
+              <div className='-mt-40'>
                 <Foursquare
                   FoursquareName='데일리 체험'
                   FoursquareImage='/Experience.svg'
@@ -116,7 +127,7 @@ const Provide = () => {
           <div className="mt-6 flex justify-center">
             <CustomButton
               ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-              FontStyle='text-primary text-center text-4xl'
+              FontStyle='text-primary text-center text-4xl font-bold'
               ButtonContent='우리 모임 확인하기'
               href='https://www.wooriya.com/'
             />

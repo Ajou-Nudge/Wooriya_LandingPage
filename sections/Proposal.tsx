@@ -11,21 +11,24 @@ const Proposal = () => {
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
-      const mobile = useMediaQuery({query: "(max-width: 400px)"});
-      const pc = useMediaQuery({query: "(min-width:1080px)"})
+      const mobile = useMediaQuery({query: "(max-width: 1400px)"});
+      const pc = useMediaQuery({query: "(min-width:1401px)"})
       
       useEffect(()=>{
-            if(mobile) setIsMobile(mobile);
-            if(pc) setIsPc(pc)
-
-            console.log("mobile ", mobile)
-            console.log("pc ",pc)
+          if(mobile) {
+                setIsMobile(mobile);
+                setIsPc(false);
+          }
+          if(pc) {
+                setIsPc(pc);
+                setIsMobile(false);
+          }
       },[mobile,pc])
 
       return (
         <section className='section_container'>
-          {isPc && <div>
-                <div className='flex-1 mt-80 ml-80'>
+          {isPc && <div className='flex flex-row'>
+              <div className='flex-1 mt-80 ml-80'>
                 <Title
                   SubTitleContent="우리야는 어떻게 신청해요?"
                   TitleContent="지금 바로/ 우리가 원하는/ 제휴처를 만나/ Win-Win해요"

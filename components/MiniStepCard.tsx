@@ -15,7 +15,7 @@ const MiniStepCard: React.FC<MiniStepCardProps> = ({
   const dividedContent = CardContent.split('/');
 
   return (
-    <div className="rounded-lg bg-coolgray-cg-00 custom-box-shadow flex items-center w-[50.5rem] h-[13.25rem] p-[1rem] pb-[0.5rem] ml-0 mt-8">
+    <div className="rounded-lg bg-coolgray-cg-00 custom-box-shadow flex items-center Step_Card_container ml-1 mt-8">
       <div className="ml-4 mr-4">
         <Image
           src={`/${ImageName}`}
@@ -25,8 +25,8 @@ const MiniStepCard: React.FC<MiniStepCardProps> = ({
         />
       </div>
       <div className="text-coolgray-cg-800">
-        <div className="text-center font-bold text-5xl ml-4">{StepContent}</div>
-        <div className="p-4 text-coolgray-cg-700 text-4xl">
+        <div className="text-center font-bold text-4xl ml-4">{StepContent}</div>
+        <div className="p-4 text-coolgray-cg-700 text-3xl">
           {dividedContent.map((part, index) => (
             <p key={index}>{part}</p>
           ))}

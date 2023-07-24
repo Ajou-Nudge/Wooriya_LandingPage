@@ -15,7 +15,7 @@ const StepCard: React.FC<StepCardProps> = ({
   const dividedContent = CardContent.split('/');
 
   return (
-    <div className="rounded-lg bg-coolgray-cg-00 custom-box-shadow flex flex-row items-center w-[34.5rem] h-[11.25rem] p-[1rem] pb-[0.5rem]">
+    <div className="rounded-lg bg-coolgray-cg-00 custom-box-shadow flex flex-row items-center Step_Card_container">
       <div className="ml-4 mr-4">
         <Image
           src={`/${ImageName}`}
