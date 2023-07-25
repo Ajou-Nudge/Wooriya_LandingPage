@@ -46,15 +46,39 @@ const Provide = () => {
           </div>
           
                 {/* Right column */}
-          <div className='flex-1 flex flex-wrap mr-60 ml-20'>
+          <div className='flex flex-col ml-20'>
               {/* First row */}
-              <div className='mt-5'>
+              <div className=''>
                 <Foursquare
                   FoursquareName='의료'
                   FoursquareImage='/Doctor.svg'
                 />
               </div>
-              <div className='-mt-20'>
+             
+              <div className=''>
+                <Foursquare
+                  FoursquareName='행사'
+                  FoursquareImage='/Festival.svg'
+                />
+              </div>
+
+              <div className=' '>
+                <Foursquare
+                  FoursquareName='코칭'
+                  FoursquareImage='/Coaching.svg'
+                />
+              </div>
+              
+              <div className=''>
+                <Foursquare
+                  FoursquareName='의료'
+                  FoursquareImage='/Doctor.svg'
+                />
+              </div>
+
+        </div>
+        <div>
+              <div className='-mt-25'>
                 <div className='foursquare-card'>
                     <div className='image-container rounded-md'>
                     <Image
@@ -68,48 +92,29 @@ const Provide = () => {
                     </div>
                </div>
               </div>
-              {/* Second row */}
+
               <div className=''>
-                <Foursquare
-                  FoursquareName='행사'
-                  FoursquareImage='/Festival.svg'
-                />
-              </div>
-              <div className='-mt-40'>
                 <Foursquare
                   FoursquareName='공간 대여'
                   FoursquareImage='/SpaceRental.svg'
                 />
               </div>
-
-              {/* Third row */}
-              <div className=' '>
-                <Foursquare
-                  FoursquareName='코칭'
-                  FoursquareImage='/Coaching.svg'
-                />
-              </div>
-              <div className='-mt-40'>
+             
+              <div className=''>
                 <Foursquare
                   FoursquareName='강연'
                   FoursquareImage='/Lecture.svg'
                 />
               </div>
 
-              {/* Fourth row */}
               <div className=''>
-                <Foursquare
-                  FoursquareName='의료'
-                  FoursquareImage='/Doctor.svg'
-                />
-              </div>
-              <div className='-mt-40'>
                 <Foursquare
                   FoursquareName='데일리 체험'
                   FoursquareImage='/Experience.svg'
                 />
               </div>
-          </div>
+            </div>
+
           </div>
         </div>
       }
@@ -133,8 +138,8 @@ const Provide = () => {
             />
           </div>
         </div>
-        <div className='mt-40 gap-5' style={{ overflowX: 'hidden' }}>
-          <div className='flex flex-row gap-4' style={{ transform: 'translateX(20px)' }}>
+        <div className='mt-40' style={{ overflowX: 'hidden' }}>
+          <div className='flex flex-row ' style={{ transform: 'translateX(25px)' }}>
               <Foursquare
                     FoursquareName='의료'
                     FoursquareImage='/Doctor.svg'
@@ -148,7 +153,7 @@ const Provide = () => {
                     FoursquareImage='/Coaching.svg'
               />
           </div> 
-          <div className='flex flex-row gap-4' style={{ transform: 'translateX(-20px)' }}>
+          <div className='flex flex-row' style={{ transform: 'translateX(-25px)' }}>
               <Foursquare
                     FoursquareName='경연'
                     FoursquareImage='/Lecture.svg'

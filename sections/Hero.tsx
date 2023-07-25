@@ -88,17 +88,19 @@ const Hero: React.FC = () => {
                     <div>
                         <Image
                         src="/logo.svg"
-                        width={remToPixels(4)}
-                        height={remToPixels(4)}
+                        width={0}
+                        height={0}
                         alt="Wooriya logo"
+                        style={{width:'4rem', height:'auto'}}
                         />
                     </div>
                     <div>
                         <Image
                         src="/wooriya.svg"
-                        width={remToPixels(20)}
-                        height={remToPixels(20)}
+                        width={0}
+                        height={0}
                         alt="wooriya letters"
+                        style={{width:'20rem', height:'auto'}}
                         />
                     </div>
                 </div>
