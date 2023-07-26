@@ -23,6 +23,7 @@ const MiniStepCard: React.FC<MiniStepCardProps> = ({
           height={70}
           alt={`/Wooriya ${ImageName}`}
           loading="lazy"
+          priority
         />
       </div>
       <div className="text-coolgray-cg-800">

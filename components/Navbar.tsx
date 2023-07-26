@@ -12,7 +12,11 @@ const Navbar = () => {
           height={64}
           alt="Wooriya logo"
           className="sm:w-26 sm:h-26 md:w-60 md:h-60 lg:w-64 lg:h-64 xl:w-64 xl:h-64"
+<<<<<<< HEAD
           loading="lazy"
+=======
+          priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
         />
       </div>
       <div>
@@ -23,7 +27,11 @@ const Navbar = () => {
           height={80}
           alt="wooriya letters"
           className="sm:w-132 sm:h-33 md:w-319 md:h-80 lg:w-319 lg:h-80 xl:w-319 xl:h-80"
+<<<<<<< HEAD
           loading="lazy"
+=======
+          priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
         />
       </div>
     </div>

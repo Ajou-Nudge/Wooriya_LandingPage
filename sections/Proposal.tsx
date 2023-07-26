@@ -54,14 +54,22 @@ const Proposal = () => {
                         width={60}
                         height={60}
                         alt="Wooriya logo"
+<<<<<<< HEAD
                         loading="lazy"
+=======
+                        priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
                       />
                       <Image
                         src="/wooriya.svg"
                         width={300}
                         height={300}
                         alt="wooriya letters"
+<<<<<<< HEAD
                         loading="lazy"
+=======
+                        priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
                       />
                     </div>
           
@@ -106,14 +114,22 @@ const Proposal = () => {
                                 width={remToPixels(3)}
                                 height={remToPixels(3)}
                                 alt="Wooriya logo"
+<<<<<<< HEAD
                                 loading="lazy"
+=======
+                                priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
                               />
                               <Image
                                 src="/wooriya.svg"
                                 width={remToPixels(15)}
                                 height={remToPixels(15)}
                                 alt="wooriya letters"
+<<<<<<< HEAD
                                 loading="lazy"
+=======
+                                priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
                               />
                             </div>
                             <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>모집 기간</div>

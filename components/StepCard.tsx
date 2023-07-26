@@ -22,7 +22,11 @@ const StepCard: React.FC<StepCardProps> = ({
           width={100}
           height={100}
           alt={`/Wooriya ${ImageName}`}
+<<<<<<< HEAD
           loading="lazy"
+=======
+          priority
+>>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
         />
       </div>
       <div className="text-coolgray-cg-800">

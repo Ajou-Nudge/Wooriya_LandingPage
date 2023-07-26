@@ -42,6 +42,7 @@ const Card: React.FC<CardProps> = ({
         height={remToPixels(5)}
         alt={`/Wooriya ${ImageName}`}
         loading="lazy"
+        priority
       />
       <div className='text-coolgray-cg-700 text-center mt-2'>
         {dividedContent.map((part, idx) => (

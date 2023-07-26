@@ -19,6 +19,7 @@ const Foursquare: React.FC<FoursquareProps> = ({
           width={0}
           height={0}
           loading="lazy"
+          priority
         />
       <div className='text-container'>
         {FoursquareName}
