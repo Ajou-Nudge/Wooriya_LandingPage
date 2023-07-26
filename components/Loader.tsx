@@ -1,21 +1,21 @@
 'use client';
 
-import { PuffLoader } from "react-spinners";
+import { BeatLoader, PacmanLoader, PuffLoader } from "react-spinners";
 
 const Loader = () => {
   return ( 
     <div
     className="
-      h-[70vh]
+      h-[90vh]
       flex 
       flex-col 
       justify-center 
       items-center 
     "
     >
-      <PuffLoader
-        size={100}
-        color="red"
+      <PacmanLoader
+        size={30}
+        color="blue"
       />
     </div>
    );

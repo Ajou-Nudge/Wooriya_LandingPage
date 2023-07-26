@@ -629,6 +629,12 @@ video {
 .h-\[70vh\] {
   height: 70vh;
 }
+.h-\[50vh\] {
+  height: 50vh;
+}
+.h-\[90vh\] {
+  height: 90vh;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
