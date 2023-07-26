@@ -18,7 +18,6 @@ const Foursquare: React.FC<FoursquareProps> = ({
           style={{ borderRadius: '4rem', width: '22rem', height: 'auto'}}
           width={0}
           height={0}
-          loading="lazy"
           priority
         />
       <div className='text-container'>

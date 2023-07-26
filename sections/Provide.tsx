@@ -85,11 +85,7 @@ const Provide = () => {
                       src="/Rental.svg"
                       layout='fill'
                       alt={`Wooriya Rental`}
-<<<<<<< HEAD
-                      loading="lazy"
-=======
                       priority
->>>>>>> 7d82501811e580c5904fa2b6ad73458001148f5e
                     ></Image>
                     </div>
                     <div className='text-container'>

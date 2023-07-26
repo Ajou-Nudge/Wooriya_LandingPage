@@ -41,7 +41,6 @@ const Card: React.FC<CardProps> = ({
         width={remToPixels(5)}
         height={remToPixels(5)}
         alt={`/Wooriya ${ImageName}`}
-        loading="lazy"
         priority
       />
       <div className='text-coolgray-cg-700 text-center mt-2'>
