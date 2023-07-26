@@ -13,7 +13,7 @@ const Loader = () => {
       items-center 
     "
     >
-      <PacmanLoader
+      <BeatLoader
         size={30}
         color="blue"
       />
