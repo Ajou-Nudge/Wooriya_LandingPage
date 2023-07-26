@@ -594,6 +594,17 @@ html{
         overflow: hidden; /* 카드 영역을 넘어간 이미지 숨김 */
       }
 
+      .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: white;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
     .Hero_button_container{
         width: 500px;
         height: 100px;

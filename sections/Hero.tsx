@@ -92,6 +92,7 @@ const Hero: React.FC = () => {
                         height={0}
                         alt="Wooriya logo"
                         style={{width:'4rem', height:'auto'}}
+                        loading="lazy"
                         />
                     </div>
                     <div>
@@ -101,6 +102,7 @@ const Hero: React.FC = () => {
                         height={0}
                         alt="wooriya letters"
                         style={{width:'20rem', height:'auto'}}
+                        loading="lazy"
                         />
                     </div>
                 </div>
@@ -138,7 +140,7 @@ const Hero: React.FC = () => {
                         duration={500}
                         className="cursor-pointer"
                         >
-                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow" />
+                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow " loading="lazy" />
                         </Link>
                 </div>
                 
