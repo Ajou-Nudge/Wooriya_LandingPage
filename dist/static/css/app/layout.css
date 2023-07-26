@@ -620,17 +620,14 @@ video {
 .mt-80 {
   margin-top: 20rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
-}
-.h-\[70vh\] {
-  height: 70vh;
-}
-.h-\[50vh\] {
-  height: 50vh;
 }
 .h-\[90vh\] {
   height: 90vh;

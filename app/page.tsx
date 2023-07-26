@@ -11,24 +11,23 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate the loading time (you can use real loading events here)
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Set the duration as needed
+    }, 2000);
   }, []);
+  
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
+        <div  style={{ display: loading ? 'block' : 'none' }} >
+          <Loader />
+        </div>
+        <div  style={{ display: loading ? 'none' : 'block' }} >
           <Hero />
           <Benefit />
           <Provide />
           <Steps />
           <Proposal />
-        </>
-      )}
+        </div>  
     </>
   );
 }
