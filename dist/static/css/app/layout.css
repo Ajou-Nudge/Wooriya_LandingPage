@@ -940,6 +940,16 @@ html{
     }    
 }
 
+/******************************/
+/****901 ~ 999*/
+/******************************/
+
+@media (min-height:900px) and (max-height:999px) {
+    .mt-start{
+        margin-top: 21rem;
+    }    
+}
+
 
 /******************************/
 /****800 ~ 900*/
@@ -1174,7 +1184,7 @@ html{
 /* 400px 이상 500px 이하의 범위에 대한 스타일 */
 @media (min-width: 401px) and (max-width: 500px) {
     html {
-      font-size: 8px;
+      font-size: 10px;
     }
     .cardImage{
         width: 8rem;
@@ -1219,9 +1229,8 @@ html{
         padding: 1rem;
         padding-bottom: 0.5rem;
     }
-     
 
-     /* 정사각형 카드 스타일 */
+     /* 기본 카드 스타일 */
      .foursquare-card {
         width: 18rem; /* 기본 카드 크기 */
         height: 18rem;
@@ -1231,13 +1240,18 @@ html{
       /* Text 스타일은 그대로 유지 */
     .text-container {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: bold;
         color: white;
         font-size: 1.75rem;
         z-index: 1;
+    }
+
+    .color-Box{
+        width: 40rem;   /* 600px / 16px = 37.5rem */
+        height: 50rem;  /* 754px / 16px = 47.125rem */
     }
 
   }
