@@ -6,6 +6,7 @@ import Proposal from '@/sections/Proposal'
 import Provide from '@/sections/Provide'
 import Steps from '@/sections/Steps'
 import React,{ useState, useEffect} from 'react'
+import Head from 'next/head'
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
