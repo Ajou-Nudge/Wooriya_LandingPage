@@ -13,7 +13,7 @@ const Benefit: React.FC = () => {
       { ImageName: 'squres.svg', CardContent: '무엇을 하든',CardContentBold: '다양한 분야 제휴' },
       { ImageName: 'bluePeople.svg', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
       ];
-
+      
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
@@ -95,3 +95,4 @@ const Benefit: React.FC = () => {
 }
 
 export default Benefit;
+
