@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
                         href='https://www.wooriya.com/'
                     ></CustomButton>
                 </div>
-                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 해택을 확인해보세요</div>
+                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 혜택을 확인해보세요</div>
     
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link
@@ -130,8 +130,7 @@ const Hero: React.FC = () => {
                     ></CustomButton>
                 </div>
 
-                <div className='mt-80 text-white flex justify-center flex-small-screen text-3xl'>우리모임 해택을 확인해보세요</div>
-    
+                <div className='mt-80 text-white flex justify-center flex-small-screen text-3xl '>우리모임 해택을 확인해보세요</div>
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link
                         to="benefit-section"
@@ -140,7 +139,7 @@ const Hero: React.FC = () => {
                         duration={500}
                         className="cursor-pointer"
                         >
-                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow " priority />
+                        <Image src="/arrow.svg" width={0} height={0} alt="white arrow " priority style={{width:'6rem', height:'auto'}} />
                         </Link>
                 </div>
                 

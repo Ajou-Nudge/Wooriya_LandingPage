@@ -19,15 +19,16 @@ const MiniStepCard: React.FC<MiniStepCardProps> = ({
       <div className="ml-4 mr-4">
         <Image
           src={`/${ImageName}`}
-          width={70}
-          height={70}
+          width={0}
+          height={0}
           alt={`/Wooriya ${ImageName}`}
+          className='stepImage'
           priority
         />
       </div>
       <div className="text-coolgray-cg-800">
-        <div className="text-center font-bold text-4xl ml-4">{StepContent}</div>
-        <div className="p-4 text-coolgray-cg-700 text-3xl">
+        <div className="text-center font-bold miniStepfont ml-4">{StepContent}</div>
+        <div className="p-4 text-coolgray-cg-700 miniContentfont">
           {dividedContent.map((part, index) => (
             <p key={index}>{part}</p>
           ))}

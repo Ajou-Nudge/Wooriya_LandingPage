@@ -28,9 +28,10 @@ const Steps = () => {
 
   return (
     <section className='section_container bg-coolgray-cg-20'>
-     {isPc && <div className='flex flex-row section_container mr-0 ml-80'>
-          <div className='ml-1'>
-            <div className='mt-center mr-0'>
+     {isPc && <div className='flex section_container justify-center'>
+        <div className='flex flex-1 justify-end'>
+          <div className='ml-1 flex flex-col justify-center mr-5'>
+            <div className='mr-0'>
               <StepCard
                 StepContent="STEP1. 우리 단체 등록하기"
                 ImageName="check-list.svg"
@@ -52,8 +53,8 @@ const Steps = () => {
               />
             </div>
           </div>
-
-          <div className='ml-10 mt-cus mr-60'>
+        </div>
+          <div className='ml-5 flex flex-1 flex-col justify-center'>
             <Title
               SubTitleContent="우리야에서 제휴를 맺으려면?"
               TitleContent="단체 등록으로/ 제공되는 우리가 찾던/ 서비스와 혜택"
@@ -70,7 +71,7 @@ const Steps = () => {
       </div>}
 
       {isMobile && <div>
-            <div className='flex justify-center mt-20'>
+            <div className='flex justify-center mt-start'>
               <MiniTitle
                 SubTitleContent="우리야에서 제휴를 맺으려면?"
                 TitleContent="단체 등록으로 제공되는/ 우리가 찾던 서비스와 혜택"

@@ -27,10 +27,10 @@ const Provide = () => {
 
   return (
     <div className='section_container' style={{ overflow: 'hidden' }}>
-      {isPc && <div>
-          <div className='flex ml-80 mr-0'>
+      {isPc && <div className='flex flex-row'>
+          <div className='flex flex-row justify-center flex-1' >
             {/* Left column */}
-            <div className='mt-80 flex flex-col'>
+            <div className='flex flex-col justify-center'>
               <Title
                 SubTitleContent='우리야가 제공하는 서비스는?'
                 TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
@@ -45,8 +45,8 @@ const Provide = () => {
               </div>
           </div>
           
-                {/* Right column */}
-          <div className='flex flex-col ml-20'>
+        
+          <div className='flex flex-col ml-10'>
               {/* First row */}
               <div className=''>
                 <Foursquare
@@ -122,7 +122,7 @@ const Provide = () => {
 
       {isMobile &&
       <div>
-        <div className='mt-20'>
+        <div className='mt-start'>
           <div className='flex justify-center'>
             <MiniTitle
               SubTitleContent='우리야가 제공하는 서비스는?'
@@ -140,7 +140,7 @@ const Provide = () => {
           </div>
         </div>
         <div className='mt-40' style={{ overflowX: 'hidden' }}>
-          <div className='flex flex-row ' style={{ transform: 'translateX(25px)' }}>
+          <div className='flex flex-row justify-center' style={{ transform: 'translateX(25px)' }}>
               <Foursquare
                     FoursquareName='의료'
                     FoursquareImage='/Doctor.svg'
@@ -154,7 +154,7 @@ const Provide = () => {
                     FoursquareImage='/Coaching.svg'
               />
           </div> 
-          <div className='flex flex-row' style={{ transform: 'translateX(-25px)' }}>
+          <div className='flex flex-row justify-center' style={{ transform: 'translateX(-25px)' }}>
               <Foursquare
                     FoursquareName='경연'
                     FoursquareImage='/Lecture.svg'

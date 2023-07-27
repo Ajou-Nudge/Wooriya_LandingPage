@@ -1,11 +1,11 @@
 // Card.tsx
-'use clinet'
-import React, { useState, useEffect }from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 interface CardProps {
   ImageName: string;
   CardContent: string;
+  CardContentBold: string;
   CardStyle?: React.CSSProperties;
   index?: number; // index 속성에 물음표(?)를 붙여 기본값이 없어도 오류가 발생하지 않도록 설정
 }
@@ -17,20 +17,10 @@ const classNameFromStyle = (index: number) => {
 const Card: React.FC<CardProps> = ({
   ImageName,
   CardContent,
+  CardContentBold,
   CardStyle,
   index = 0, // index 기본값을 0으로 설정
 }) => {
-  const dividedContent = CardContent.split('/');
-  const [rootFontSize, setRootFontSize] = useState(16); // Set a default value (usually 16px)
-
-  const remToPixels = (rem:number) : number => rem * rootFontSize;
-
-  useEffect(() => {
-    // Get the root font size from the window object
-    const rootFontSizeValue = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    setRootFontSize(rootFontSizeValue);
-  }, []);
-
   return (
     <div
       className={`rounded-lg bg-coolgray-cg-00 custom-box-shadow flex flex-col items-center justify-center card_container ${classNameFromStyle(index)}`}
@@ -38,15 +28,19 @@ const Card: React.FC<CardProps> = ({
     >
       <Image
         src={`/${ImageName}`}
-        width={remToPixels(5)}
-        height={remToPixels(5)}
+        width={0}
+        height={0}
         alt={`/Wooriya ${ImageName}`}
+        className='cardImage'
         priority
       />
-      <div className='text-coolgray-cg-700 text-center mt-2'>
-        {dividedContent.map((part, idx) => (
-          <p key={idx}>{part}</p>
-        ))}
+      <div className='flex flex-col cardFont'>
+        <div className='text-coolgray-cg-700 text-center mt-2'>
+          {CardContent}
+        </div>
+        <div className='text-coolgray-cg-800 text-center mt-2'>
+          {CardContentBold}
+        </div>
       </div>
     </div>
   );

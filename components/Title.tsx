@@ -12,7 +12,7 @@ const Title: React.FC<TitleProps> = ({
   const dividedContent = TitleContent.split('/');
 
   return (
-    <div>
+    <div className=''>
         <div className="text-coolgray-cg-500 text-4xl mb-6">{SubTitleContent}</div>
         <div>
               {dividedContent.map((part, index) => (
