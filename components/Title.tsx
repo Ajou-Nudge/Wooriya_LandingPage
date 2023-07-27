@@ -13,7 +13,7 @@ const Title: React.FC<TitleProps> = ({
 
   return (
     <div className=''>
-        <div className="text-coolgray-cg-500 text-4xl mb-6">{SubTitleContent}</div>
+        <div className="text-coolgray-cg-500 text-4xl mb-6s">{SubTitleContent}</div>
         <div>
               {dividedContent.map((part, index) => (
                     <p className="text-6xl font-bold mt-4"key={index}>{part}</p>

@@ -26,98 +26,102 @@ const Provide = () => {
   },[mobile,pc])
 
   return (
-    <div className='section_container' style={{ overflow: 'hidden' }}>
-      {isPc && <div className='flex flex-row'>
-          <div className='flex flex-row justify-center flex-1' >
-            {/* Left column */}
-            <div className='flex flex-col justify-center'>
-              <Title
-                SubTitleContent='우리야가 제공하는 서비스는?'
-                TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
-              />
-              <div className="mt-4">
-                <CustomButton
-                  ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-                  FontStyle='text-primary text-center text-2xl font-bold'
-                  ButtonContent='다양한 혜택들 받기'
-                  href='https://www.wooriya.com/'
-                />
-              </div>
+    <section className='section_container' style={{ overflow: 'hidden' }}>
+      {isPc && 
+      
+      <div className=''>
+        <div className='flex flex-row' >
+          <div className='flex flex-1 justify-end mr-5'>
+                <div className='flex flex-col provide-mt'>
+                  <Title
+                    SubTitleContent='우리야가 제공하는 서비스는?'
+                    TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
+                  />
+                  <div className="mt-4">
+                    <CustomButton
+                      ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
+                      FontStyle='text-primary text-center text-2xl font-bold'
+                      ButtonContent='다양한 혜택들 받기'
+                      href='https://www.wooriya.com/'
+                    />
+                  </div>
+                </div>
           </div>
-          
-        
-          <div className='flex flex-col ml-10'>
-              {/* First row */}
-              <div className=''>
-                <Foursquare
-                  FoursquareName='의료'
-                  FoursquareImage='/Doctor.svg'
-                />
-              </div>
-             
-              <div className=''>
-                <Foursquare
-                  FoursquareName='행사'
-                  FoursquareImage='/Festival.svg'
-                />
+        <div className='flex-1 ml-5'>
+              <div className='flex flex-row'>
+                    <div className=''>
+                        
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='의료'
+                            FoursquareImage='/Doctor.svg'
+                          />
+                        </div>
+                      
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='행사'
+                            FoursquareImage='/Festival.svg'
+                          />
+                        </div>
+
+                        <div className=' '>
+                          <Foursquare
+                            FoursquareName='코칭'
+                            FoursquareImage='/Coaching.svg'
+                          />
+                        </div>
+                        
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='의료'
+                            FoursquareImage='/Doctor.svg'
+                          />
+                        </div>
               </div>
 
-              <div className=' '>
-                <Foursquare
-                  FoursquareName='코칭'
-                  FoursquareImage='/Coaching.svg'
-                />
-              </div>
-              
               <div className=''>
-                <Foursquare
-                  FoursquareName='의료'
-                  FoursquareImage='/Doctor.svg'
-                />
-              </div>
+                        <div className='-mt-25'>
+                            <div className='foursquare-card'>
+                                <div className='image-container rounded-md'>
+                                <Image
+                                  src="/Rental.svg"
+                                  layout='fill'
+                                  alt={`Wooriya Rental`}
+                                  priority
+                                ></Image>
+                                </div>
+                                <div className='text-container'>
+                                  장비 대여
+                                </div>
+                            </div>
+                        </div>
 
-        </div>
-        <div>
-              <div className='-mt-25'>
-                <div className='foursquare-card'>
-                    <div className='image-container rounded-md'>
-                    <Image
-                      src="/Rental.svg"
-                      layout='fill'
-                      alt={`Wooriya Rental`}
-                      priority
-                    ></Image>
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='공간 대여'
+                            FoursquareImage='/SpaceRental.svg'
+                          />
+                        </div>
+                      
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='강연'
+                            FoursquareImage='/Lecture.svg'
+                          />
+                        </div>
+
+                        <div className=''>
+                          <Foursquare
+                            FoursquareName='데일리 체험'
+                            FoursquareImage='/Experience.svg'
+                          />
+                        </div>
                     </div>
-                    <div className='text-container'>
-                      장비 대여
-                    </div>
-               </div>
-              </div>
-
-              <div className=''>
-                <Foursquare
-                  FoursquareName='공간 대여'
-                  FoursquareImage='/SpaceRental.svg'
-                />
-              </div>
-             
-              <div className=''>
-                <Foursquare
-                  FoursquareName='강연'
-                  FoursquareImage='/Lecture.svg'
-                />
-              </div>
-
-              <div className=''>
-                <Foursquare
-                  FoursquareName='데일리 체험'
-                  FoursquareImage='/Experience.svg'
-                />
-              </div>
-            </div>
-
+                </div>
           </div>
-        </div>
+          </div>
+      </div>
       }
 
       {isMobile &&
@@ -175,7 +179,7 @@ const Provide = () => {
       
 
 
-    </div>
+    </section>
   );
 };
 

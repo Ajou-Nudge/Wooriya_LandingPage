@@ -6,7 +6,9 @@
 *{
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
-
+.provide-mt{
+    margin-top: 22.5rem;
+}
 html{
     font-size: 16px;
 }
@@ -1087,7 +1089,13 @@ html{
     html{
         font-size: 14px;
     }
-    
+    .cardFont{
+        font-size: 1.5rem;
+    }
+    .cardImage{
+        width: 100rem;
+        height: 6rem;
+    }
     .foursquare-card {
         flex: 0 0 calc(33.33% - 1rem); /* 카드 너비를 33.33%로 설정하고 간격을 고려하여 계산 */
         position: relative;

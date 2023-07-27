@@ -47,7 +47,7 @@ const Proposal = () => {
                 </div>
               </div>
 
-              <div className='flex flex-1 ml-10'>
+              <div className='flex flex-1 ml-10 mt-center'>
                 <div className='borderRadius32 backgroundLinearGradient color-Box'>
                   <div className='p-4'>
                     <div>
