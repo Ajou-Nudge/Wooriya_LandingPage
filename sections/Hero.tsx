@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     
                  <div className='mt-20 font-bold'>
                     <div className='text-white flex justify-center text-5xl mt-1 bottom-2'>
-                        다양한 제휴와 헤택으로
+                        다양한 제휴와 혜택으로
                     </div>
                         
                     <div className='text-white flex justify-center text-5xl mt-2'>
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
                         href='https://www.wooriya.com/'
                     ></CustomButton>
                 </div>
-                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 해택을 확인해보세요</div>
+                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 혜택을 확인해보세요</div>
     
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                         duration={500}
                         className="cursor-pointer"
                         >
-                        <Image src="/arrow.svg" width={100} height={100} alt="white arrow" priority />
+                        <Image src="/arrow.svg" width={100} height={100} alt="white arrow" />
                         </Link>
                 </div>
             </div>}
@@ -92,7 +92,6 @@ const Hero: React.FC = () => {
                         height={0}
                         alt="Wooriya logo"
                         style={{width:'4rem', height:'auto'}}
-                        priority
                         />
                     </div>
                     <div>
@@ -102,14 +101,13 @@ const Hero: React.FC = () => {
                         height={0}
                         alt="wooriya letters"
                         style={{width:'20rem', height:'auto'}}
-                        priority
                         />
                     </div>
                 </div>
 
                 <div className='mt-100 font-bold'>
                     <div className='text-white flex justify-center text-7xl mt-2 bottom-2'>
-                        다양한 제휴와 헤택으로
+                        다양한 제휴와 혜택으로
                     </div>
                         
                     <div className='text-white flex justify-center text-7xl mt-4'>
@@ -130,7 +128,7 @@ const Hero: React.FC = () => {
                     ></CustomButton>
                 </div>
 
-                <div className='mt-80 text-white flex justify-center flex-small-screen text-3xl'>우리모임 해택을 확인해보세요</div>
+                <div className='mt-80 text-white flex justify-center flex-small-screen text-3xl'>우리모임 혜택을 확인해보세요</div>
     
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link
@@ -140,7 +138,7 @@ const Hero: React.FC = () => {
                         duration={500}
                         className="cursor-pointer"
                         >
-                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow " priority />
+                        <Image src="/arrow.svg" width={remToPixels(8)} height={remToPixels(8)} alt="white arrow" />
                         </Link>
                 </div>
                 
@@ -151,3 +149,4 @@ const Hero: React.FC = () => {
     };
 
 export default Hero;
+

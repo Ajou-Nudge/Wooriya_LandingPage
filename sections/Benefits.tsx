@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive"
 
 const Benefit: React.FC = () => {
       const cards = [
-      { ImageName: 'greenMoney.svg', CardContent: '큰 코민 없는/ 확실한 장비, 공간' },
+      { ImageName: 'greenMoney.svg', CardContent: '큰 고민 없는/ 확실한 장비, 공간' },
       { ImageName: 'gold.svg', CardContent: '더 모일수록 커지는/ 파격할인 혜택' },
       { ImageName: 'fire.svg', CardContent: '안전하게 보장된/ 우선 예약' },
       { ImageName: 'redMark.svg', CardContent: '어디서 모이든/ 우리 모임 주변 위치' },
@@ -93,3 +93,4 @@ const Benefit: React.FC = () => {
 }
 
 export default Benefit;
+
