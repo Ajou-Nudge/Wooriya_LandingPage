@@ -32,25 +32,25 @@ const Hero: React.FC = () => {
     return (
         <section className="section_container hero-container">
             {isPc && <div>
-                <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 flex-shrink-0  gap-1">
+                <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 flex-shrink-0  gap-1 mt-5">
                     <Navbar />
                 </div>
                     
                  <div className='mt-20 font-bold'>
-                    <div className='text-white flex justify-center text-5xl mt-1 bottom-2'>
+                    <div className='text-white flex justify-center text-6xl mt-1 bottom-2'>
                         다양한 제휴와 혜택으로
                     </div>
                         
-                    <div className='text-white flex justify-center text-5xl mt-2'>
+                    <div className='text-white flex justify-center text-6xl mt-2'>
                         하나되는 우리 동아리,
                     </div>
                         
-                    <div className='text-white flex justify-center text-5xl mt-2'>
+                    <div className='text-white flex justify-center text-6xl mt-2'>
                         우리야
                     </div>
                 </div>
                     
-                <div className='flex justify-center mt-10'>
+                <div className='flex justify-center mt-20'>
                     <CustomButton 
                         ButtonStyle="flex justify-center gap-8 Hero_button_container border-2 border-coolgray-cg-00 rounded-full"
                         FontStyle="text-white text-2xl"
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
                         href='https://www.wooriya.com/'
                     ></CustomButton>
                 </div>
-                <div className='mt-110 text-white flex justify-center flex-small-screen text-2xl'>우리모임 혜택을 확인해보세요</div>
+                <div className='mt-80 text-white flex justify-center flex-small-screen text-2xl'>우리모임 혜택을 확인해보세요</div>
     
                     <div className="flex justify-center mt-2 flex-small-screen`">
                         <Link
