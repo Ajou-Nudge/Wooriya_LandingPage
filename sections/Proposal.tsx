@@ -38,7 +38,7 @@ const Proposal = () => {
         <section className='section_container'>
           {isPc && 
           <div className='flex'>
-              <div className='flex flex-1 justify-end mr-5'>
+              <div className='flex flex-1 justify-center'>
                 <div className='flex flex-col justify-center'>
                     <Title
                       SubTitleContent="우리야는 어떻게 신청해요?"
@@ -47,7 +47,7 @@ const Proposal = () => {
                 </div>
               </div>
 
-              <div className='flex flex-1 ml-10 mt-center'>
+              <div className='flex flex-1 mt-start'>
                 <div className='borderRadius32 backgroundLinearGradient color-Box'>
                   <div className='p-4'>
                     <div>
