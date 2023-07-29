@@ -5,8 +5,11 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '우리야',
+  title: '우리야 | Wooriya',
   description: '다양한 제휴와 혜택으로 하나되는 우리 동아리, 우리야',
+  icons:{
+    icon:'/logo.png'
+  }
 }
 
 export default function RootLayout({

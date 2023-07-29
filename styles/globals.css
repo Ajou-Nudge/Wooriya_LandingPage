@@ -476,8 +476,9 @@ html{
 /******************************/
 /* 400px 이상 500px 이하의 범위에 대한 스타일 */
 @media (min-width: 401px) and (max-width: 500px) {
+    
     html {
-      font-size: 10px;
+      font-size: 9px;
     }
     .cardImage{
         width: 8rem;
@@ -496,8 +497,8 @@ html{
 
     /* 카드 기본*/
     .card_container{
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
         padding: 12px 0px;
     }
     
