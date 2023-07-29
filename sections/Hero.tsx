@@ -138,5 +138,20 @@ const Hero: React.FC = () => {
     );
     };
 
+const logoSrc = "/logo.svg";
+const wooriyaSrc = "/wooriya.svg";
+const arrowSrc = "/arrow.svg";
+
+export async function getStaticProps() {
+    const images = [logoSrc, wooriyaSrc, arrowSrc].map((src) => ({ src }));
+  
+    return {
+      props: {
+        loading: false, 
+        images, 
+      },
+    };
+  }
+  
 export default Hero;
 

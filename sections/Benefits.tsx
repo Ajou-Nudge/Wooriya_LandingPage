@@ -13,7 +13,7 @@ const Benefit: React.FC = () => {
       { ImageName: 'squres.svg', CardContent: '무엇을 하든',CardContentBold: '다양한 분야 제휴' },
       { ImageName: 'bluePeople.svg', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
       ];
-      
+
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
@@ -93,6 +93,32 @@ const Benefit: React.FC = () => {
       </section>
       )
 }
+
+const greenMoneySrc = "greenMoney.svg";
+const goldSrc = "gold.svg";
+const fireSrc = "fire.svg";
+const redMarkSrc = "redMark.svg";
+const squresSrc = "squres.svg";
+const bluePeopleSrc = "bluePeople.svg";
+
+export async function getStaticProps() {
+      
+      const images = [
+        { src: greenMoneySrc },
+        { src: goldSrc },
+        { src: fireSrc },
+        { src: redMarkSrc },
+        { src: squresSrc },
+        { src: bluePeopleSrc },
+      ];
+    
+      return {
+        props: {
+          loading: false, 
+          images, 
+        },
+      };
+    }
 
 export default Benefit;
 

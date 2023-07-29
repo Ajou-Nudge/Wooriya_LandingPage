@@ -117,4 +117,23 @@ const Steps = () => {
   )
 }
 
+const checkListSrc = 'check-list.svg';
+const moodBoardSrc = 'mood-board.svg';
+const contractSrc = 'contract.svg';
+
+export async function getStaticProps() {
+  const images = [
+    { src: checkListSrc },
+    { src: moodBoardSrc },
+    { src: contractSrc },
+  ];
+
+  return {
+    props: {
+      loading: false, 
+      images, 
+    },
+  };
+}
+
 export default Steps;

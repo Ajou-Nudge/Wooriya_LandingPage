@@ -183,4 +183,32 @@ const Provide = () => {
   );
 };
 
+const doctorSrc = 'Doctor.svg';
+const festivalSrc = 'Festival.svg';
+const coachingSrc = 'Coaching.svg';
+const rentalSrc = 'Rental.svg';
+const spaceRentalSrc = 'SpaceRental.svg';
+const lectureSrc = 'Lecture.svg';
+const experienceSrc = 'Experience.svg';
+
+export async function getStaticProps() {
+ 
+  const images = [
+    { src: doctorSrc },
+    { src: festivalSrc },
+    { src: coachingSrc },
+    { src: rentalSrc },
+    { src: spaceRentalSrc },
+    { src: lectureSrc },
+    { src: experienceSrc },
+  ];
+
+  return {
+    props: {
+      loading: false, 
+      images, 
+    },
+  };
+}
+
 export default Provide;
