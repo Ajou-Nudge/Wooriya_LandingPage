@@ -110,14 +110,14 @@ html{
 }
 
 .hero-container {
-    background: url('../public/Herobackground.webp'), lightgray;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    width: 100%; /* 100% 너비로 조정하여 부모 컨테이너에 맞게 설정 */
-    height: 100%; /* 100% 높이로 조정하여 부모 컨테이너에 맞게 설정 */
+    z-index: 0;
 }
-  
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+}
+
 .layout-container {
     width: 100%; /* 100% 너비로 설정하여 부모 컨테이너에 맞게 설정 */
     height: 100%; /* 100% 높이로 설정하여 부모 컨테이너에 맞게 설정 */

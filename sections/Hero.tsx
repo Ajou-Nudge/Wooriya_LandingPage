@@ -30,8 +30,17 @@ const Hero: React.FC = () => {
       }, []);
 
     return (
-        <section className="section_container hero-container">
-            {isPc && <div>
+        <section className="section_container">
+            <Image
+                className='hero-container'
+                src="/Herobackground.webp"
+                alt="Herobackground"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+                priority
+            ></Image>
+            {isPc && <div className='hero-content'>
                 <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 flex-shrink-0  gap-1 mt-5">
                     <Navbar />
                 </div>
@@ -73,7 +82,7 @@ const Hero: React.FC = () => {
                 </div>
             </div>}
            
-           {isMobile && <div>
+           {isMobile && <div className='hero-content'>
                 <div className='flex items-center justify-center gap-1 mt-20'>
                     <div>
                         <Image
