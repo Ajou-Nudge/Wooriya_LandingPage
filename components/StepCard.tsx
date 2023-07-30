@@ -26,7 +26,7 @@ const StepCard: React.FC<StepCardProps> = ({
         />
       </div>
       <div className="text-coolgray-cg-800">
-        <div className="text-center font-bold text-3xl ml-4">{StepContent}</div>
+        <div className="font-bold text-3xl ml-4">{StepContent}</div>
         <div className="p-4 text-coolgray-cg-700 text-2xl">
           {dividedContent.map((part, index) => (
             <p key={index}>{part}</p>

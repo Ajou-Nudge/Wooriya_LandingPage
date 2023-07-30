@@ -143,8 +143,8 @@ const Provide = () => {
             />
           </div>
         </div>
-        <div className='mt-40' style={{ overflowX: 'hidden' }}>
-          <div className='flex flex-row justify-center' style={{ transform: 'translateX(25px)' }}>
+        <div className='flex flex-col mt-40 gap-3' style={{ overflowX: 'hidden' }}>
+          <div className='flex flex-row justify-center gap-3' style={{ transform: 'translateX(25px)' }}>
               <Foursquare
                     FoursquareName='의료'
                     FoursquareImage='/Doctor.webp'
@@ -158,7 +158,7 @@ const Provide = () => {
                     FoursquareImage='/Coaching.webp'
               />
           </div> 
-          <div className='flex flex-row justify-center' style={{ transform: 'translateX(-25px)' }}>
+          <div className='flex flex-row justify-center gap-3' style={{ transform: 'translateX(-25px)' }}>
               <Foursquare
                     FoursquareName='경연'
                     FoursquareImage='/Lecture.webp'

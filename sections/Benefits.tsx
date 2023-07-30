@@ -11,7 +11,7 @@ const Benefit: React.FC = () => {
       { ImageName: 'realfire.webp', CardContent: '안전하게 보장된' ,CardContentBold: '우선 예약' },
       { ImageName: 'redMark.webp', CardContent: '어디서 모이든' ,CardContentBold: '우리 모임 주변 위치' },
       { ImageName: 'squres.webp', CardContent: '무엇을 하든',CardContentBold: '다양한 분야 제휴' },
-      { ImageName: 'realbluePeople.webp', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
+      { ImageName: 'realbluepeople.webp', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
       ];
 
       const [isMobile, setIsMobile] = useState(false);

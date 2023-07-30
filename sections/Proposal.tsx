@@ -122,7 +122,7 @@ const Proposal = () => {
                             </div>
                             <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>모집 기간</div>
                             <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>07.28(월)~08.07(월)까지</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl  mt-2'>사전혜택을 받을 수 있습니다.</div>
+                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>사전혜택을 받을 수 있습니다.</div>
 
                             <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>모집 대상</div>
                             <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>10인이상 활동 단체</div>
