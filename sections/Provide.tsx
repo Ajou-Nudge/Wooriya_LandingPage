@@ -85,7 +85,7 @@ const Provide = () => {
                             <div className='foursquare-card'>
                                 <div className='image-container rounded-md'>
                                 <Image
-                                  src="/Rental.svg"
+                                  src="/Rental.webp"
                                   layout='fill'
                                   alt={`Wooriya Rental`}
                                   priority

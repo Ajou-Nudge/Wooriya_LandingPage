@@ -273,6 +273,7 @@ html{
         font-size: 6.5px
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -368,6 +369,7 @@ html{
     }
 
     .cardImage{
+        position: relative;
         width: 7rem;
         height: 7rem;
     }
@@ -485,6 +487,7 @@ html{
       font-size: 9px;
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -564,6 +567,7 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -632,6 +636,7 @@ html{
         font-size: 1.7rem;
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -681,6 +686,7 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -766,6 +772,7 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 8rem;
         height: 8rem;
     }
@@ -902,6 +909,7 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 12rem;
         height: 12rem;
     }
@@ -992,6 +1000,7 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 10rem;
         height: 10rem;
     }
@@ -1099,6 +1108,7 @@ html{
         font-size: 2.5rem;
     }
     .cardImage{
+        position: relative;
         width: 50rem;
         height: 12.5rem;
     }
@@ -1181,6 +1191,7 @@ html{
         font-size: 1.5rem;
     }
     .cardImage{
+        position: relative;
         width: 100rem;
         height: 6rem;
     }
@@ -1197,8 +1208,9 @@ html{
         font-size: 1.5rem;
     }
     .cardImage{
+        position: relative;
         width: 100rem;
-        height: 6rem;
+        height: 100rem;
     }
 
        /* 버튼 기본*/
@@ -1283,8 +1295,9 @@ html{
         font-size: 2rem;
     }
     .cardImage{
+        position: relative;
         width: 100rem;
-        height: 6rem;
+        height: 100rem;
     }
 
        /* 버튼 기본*/
@@ -1369,8 +1382,9 @@ html{
         font-size: 1.5rem;
     }
     .cardImage{
-        width: 100rem;
-        height: 6rem;
+        position: relative;
+        width: 10rem;
+        height: 10rem;
     }
     .foursquare-card {
         flex: 0 0 calc(33.33% - 1rem); /* 카드 너비를 33.33%로 설정하고 간격을 고려하여 계산 */

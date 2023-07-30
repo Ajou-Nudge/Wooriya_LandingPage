@@ -6,12 +6,12 @@ import { useMediaQuery } from "react-responsive"
 
 const Benefit: React.FC = () => {
       const cards = [
-      { ImageName: 'greenMoney.svg', CardContent: '큰 코민 없는',CardContentBold: '확실한 장비, 공간' },
-      { ImageName: 'gold.svg', CardContent: '더 모일수록 커지는' ,CardContentBold: '파격할인 혜택' },
-      { ImageName: 'fire.svg', CardContent: '안전하게 보장된' ,CardContentBold: '우선 예약' },
-      { ImageName: 'redMark.svg', CardContent: '어디서 모이든' ,CardContentBold: '우리 모임 주변 위치' },
-      { ImageName: 'squres.svg', CardContent: '무엇을 하든',CardContentBold: '다양한 분야 제휴' },
-      { ImageName: 'bluePeople.svg', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
+      { ImageName: 'green.webp', CardContent: '큰 코민 없는',CardContentBold: '확실한 장비, 공간' },
+      { ImageName: 'realmoney.webp', CardContent: '더 모일수록 커지는' ,CardContentBold: '파격할인 혜택' },
+      { ImageName: 'realfire.webp', CardContent: '안전하게 보장된' ,CardContentBold: '우선 예약' },
+      { ImageName: 'redMark.webp', CardContent: '어디서 모이든' ,CardContentBold: '우리 모임 주변 위치' },
+      { ImageName: 'squres.webp', CardContent: '무엇을 하든',CardContentBold: '다양한 분야 제휴' },
+      { ImageName: 'realbluePeople.webp', CardContent: '빠짐없이',CardContentBold: '모두가 누리는 혜택' },
       ];
 
       const [isMobile, setIsMobile] = useState(false);

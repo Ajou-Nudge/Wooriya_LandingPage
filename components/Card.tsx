@@ -26,14 +26,14 @@ const Card: React.FC<CardProps> = ({
       className={`rounded-lg bg-coolgray-cg-00 custom-box-shadow flex flex-col items-center justify-center card_container ${classNameFromStyle(index)}`}
       style={CardStyle}
     >
-      <Image
-        src={`/${ImageName}`}
-        width={0}
-        height={0}
-        alt={`/Wooriya ${ImageName}`}
-        className='cardImage'
-        priority
-      />
+      <div className='cardImage'>
+        <Image
+          src={`/${ImageName}`}
+          fill
+          alt={`/Wooriya ${ImageName}`}
+          priority
+        />
+      </div>
       <div className='flex flex-col cardFont'>
         <div className='text-coolgray-cg-700 text-center mt-2'>
           {CardContent}
