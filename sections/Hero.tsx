@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { Link } from 'react-scroll';
 import { useMediaQuery } from "react-responsive"
 
-
 const Hero: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isPc, setIsPc] = useState(false);
@@ -32,8 +31,6 @@ const Hero: React.FC = () => {
 
     return (
         <section className="section_container hero-container">
-            <div className='foursquare-card'>
-            </div>
             {isPc && <div>
                 <div className="flex items-center justify-center w-1920 h-120 py-3 px-0 flex-shrink-0  gap-1 mt-5">
                     <Navbar />
@@ -140,21 +137,6 @@ const Hero: React.FC = () => {
         </section>
     );
     };
-
-const logoSrc = "/logo.svg";
-const wooriyaSrc = "/wooriya.svg";
-const arrowSrc = "/arrow.svg";
-
-export async function getStaticProps() {
-    const images = [logoSrc, wooriyaSrc, arrowSrc].map((src) => ({ src }));
-  
-    return {
-      props: {
-        loading: false, 
-        images, 
-      },
-    };
-  }
   
 export default Hero;
 

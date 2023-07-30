@@ -183,32 +183,4 @@ const Provide = () => {
   );
 };
 
-const doctorSrc = 'Doctor.webp';
-const festivalSrc = 'Festival.webp';
-const coachingSrc = 'Coaching.webp';
-const rentalSrc = 'Rental.webp';
-const spaceRentalSrc = 'SpaceRental.webp';
-const lectureSrc = 'Lecture.webp';
-const experienceSrc = 'Experience.webp';
-
-export async function getStaticProps() {
- 
-  const images = [
-    { src: doctorSrc },
-    { src: festivalSrc },
-    { src: coachingSrc },
-    { src: rentalSrc },
-    { src: spaceRentalSrc },
-    { src: lectureSrc },
-    { src: experienceSrc },
-  ];
-
-  return {
-    props: {
-      loading: false, 
-      images, 
-    },
-  };
-}
-
 export default Provide;

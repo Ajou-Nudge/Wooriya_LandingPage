@@ -94,31 +94,5 @@ const Benefit: React.FC = () => {
       )
 }
 
-const greenMoneySrc = "greenMoney.svg";
-const goldSrc = "gold.svg";
-const fireSrc = "fire.svg";
-const redMarkSrc = "redMark.svg";
-const squresSrc = "squres.svg";
-const bluePeopleSrc = "bluePeople.svg";
-
-export async function getStaticProps() {
-      
-      const images = [
-        { src: greenMoneySrc },
-        { src: goldSrc },
-        { src: fireSrc },
-        { src: redMarkSrc },
-        { src: squresSrc },
-        { src: bluePeopleSrc },
-      ];
-    
-      return {
-        props: {
-          loading: false, 
-          images, 
-        },
-      };
-    }
-
 export default Benefit;
 

@@ -110,7 +110,7 @@ html{
 }
 
 .hero-container {
-    background: url('../public/Herobackground.png'), lightgray;
+    background: url('../public/Herobackground.webp'), lightgray;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
