@@ -5,6 +5,8 @@ import Image from 'next/image'
 import React,{ useState, useEffect } from 'react'
 import { useMediaQuery } from "react-responsive"
 import MiniTitle from '@/components/MiniTitle'
+import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
 const Proposal = () => {
   const [rootFontSize, setRootFontSize] = useState(16); // Set a default value (usually 16px)
@@ -47,8 +49,15 @@ const Proposal = () => {
                 </div>
               </div>
 
-              <div className='flex flex-1 mt-start'>
-                <div className='borderRadius32 backgroundLinearGradient color-Box'>
+            <motion.div 
+              variants={staggerContainer(0.1,0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+              className='flex flex-1 mt-start'>
+              <motion.div
+                variants={fadeIn('up', 'tween', 0.3, 1)}
+                className='borderRadius32 backgroundLinearGradient color-Box'> 
                   <div className='p-4'>
                     <div>
                       <div className='flex justify-center gap-1 mt-15'>
@@ -81,7 +90,6 @@ const Proposal = () => {
                     </div>
                   </div>
 
-                {/* Right Column */}
                   <div className='items-center p-4 flex justify-center mt-10'>
                     <CustomButton
                       ButtonStyle='border-radius-64 background-coolgray-800 flex justify-center button_container'
@@ -90,8 +98,8 @@ const Proposal = () => {
                       href='https://www.wooriya.com/'
                     ></CustomButton>
                  </div>
-                </div>    
-              </div>
+              </motion.div>    
+              </motion.div>
           </div>}
           
           {isMobile && <div className='flex flex-col'>
@@ -101,8 +109,15 @@ const Proposal = () => {
                   TitleContent="지금 바로 우리가 원하는/ 제휴처를 만나 Win-Win해요"
               ></MiniTitle>
             </div>
-            <div className='flex justify-center'>
-                <div className='borderRadius32 backgroundLinearGradient color-Box mt-20'>
+            <motion.div 
+            variants={staggerContainer(0.1,0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className='flex justify-center'>
+                <motion.div 
+                variants={fadeIn('up', 'tween', 0.3, 1)}
+                className='borderRadius32 backgroundLinearGradient color-Box mt-20'>
                   <div className='flex flex-col'>
                       <div className='flex gap-1 justify-center mt-15'>
                               <Image
@@ -141,8 +156,8 @@ const Proposal = () => {
                       ></CustomButton>
                     </div>
 
-                  </div>
-            </div>    
+                  </motion.div>
+            </motion.div>    
         </div>}
         </section>
       )
