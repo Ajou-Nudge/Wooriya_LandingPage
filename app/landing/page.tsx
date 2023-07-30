@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
+import Image from 'next/image';
 
 const ScrollDirectionExample: React.FC = () => {
   const sections = ['prev-section', 'next-section', 'extra-section'];

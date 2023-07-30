@@ -151,7 +151,6 @@ const Proposal = () => {
 const logoSrc = 'logo.svg';
 const wooriyaSrc = 'wooriya.svg';
 
-
 export async function getStaticProps() {
 
   const images = [

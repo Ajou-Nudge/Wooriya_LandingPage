@@ -15,9 +15,7 @@ const Foursquare: React.FC<FoursquareProps> = ({
         <Image
           src={FoursquareImage}
           alt={`Wooriya ${FoursquareName}`}
-          style={{ borderRadius: '4rem', width: '22rem', height: 'auto'}}
-          width={0}
-          height={0}
+          fill
           priority
         />
       <div className='text-container'>

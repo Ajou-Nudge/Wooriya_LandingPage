@@ -54,28 +54,28 @@ const Provide = () => {
                         <div className=''>
                           <Foursquare
                             FoursquareName='의료'
-                            FoursquareImage='/Doctor.svg'
+                            FoursquareImage='/Doctor.webp'
                           />
                         </div>
                       
                         <div className=''>
                           <Foursquare
                             FoursquareName='행사'
-                            FoursquareImage='/Festival.svg'
+                            FoursquareImage='/Festival.webp'
                           />
                         </div>
 
                         <div className=' '>
                           <Foursquare
                             FoursquareName='코칭'
-                            FoursquareImage='/Coaching.svg'
+                            FoursquareImage='/Coaching.webp'
                           />
                         </div>
                         
                         <div className=''>
                           <Foursquare
                             FoursquareName='의료'
-                            FoursquareImage='/Doctor.svg'
+                            FoursquareImage='/Doctor.webp'
                           />
                         </div>
               </div>
@@ -100,21 +100,21 @@ const Provide = () => {
                         <div className=''>
                           <Foursquare
                             FoursquareName='공간 대여'
-                            FoursquareImage='/SpaceRental.svg'
+                            FoursquareImage='/SpaceRental.webp'
                           />
                         </div>
                       
                         <div className=''>
                           <Foursquare
                             FoursquareName='강연'
-                            FoursquareImage='/Lecture.svg'
+                            FoursquareImage='/Lecture.webp'
                           />
                         </div>
 
                         <div className=''>
                           <Foursquare
                             FoursquareName='데일리 체험'
-                            FoursquareImage='/Experience.svg'
+                            FoursquareImage='/Experience.webp'
                           />
                         </div>
                     </div>
@@ -147,29 +147,29 @@ const Provide = () => {
           <div className='flex flex-row justify-center' style={{ transform: 'translateX(25px)' }}>
               <Foursquare
                     FoursquareName='의료'
-                    FoursquareImage='/Doctor.svg'
+                    FoursquareImage='/Doctor.webp'
               />
               <Foursquare
                     FoursquareName='행사'
-                    FoursquareImage='/Festival.svg'
+                    FoursquareImage='/Festival.webp'
               />
               <Foursquare
                     FoursquareName='코칭'
-                    FoursquareImage='/Coaching.svg'
+                    FoursquareImage='/Coaching.webp'
               />
           </div> 
           <div className='flex flex-row justify-center' style={{ transform: 'translateX(-25px)' }}>
               <Foursquare
                     FoursquareName='경연'
-                    FoursquareImage='/Lecture.svg'
+                    FoursquareImage='/Lecture.webp'
               />
               <Foursquare
                     FoursquareName= '공간 대여'
-                    FoursquareImage='/SpaceRental.svg'
+                    FoursquareImage='/SpaceRental.webp'
               />
               <Foursquare
                     FoursquareName='데일리 체험'
-                    FoursquareImage='/Experience.svg'
+                    FoursquareImage='/Experience.webp'
               />
           </div> 
         </div>
@@ -183,13 +183,13 @@ const Provide = () => {
   );
 };
 
-const doctorSrc = 'Doctor.svg';
-const festivalSrc = 'Festival.svg';
-const coachingSrc = 'Coaching.svg';
-const rentalSrc = 'Rental.svg';
-const spaceRentalSrc = 'SpaceRental.svg';
-const lectureSrc = 'Lecture.svg';
-const experienceSrc = 'Experience.svg';
+const doctorSrc = 'Doctor.webp';
+const festivalSrc = 'Festival.webp';
+const coachingSrc = 'Coaching.webp';
+const rentalSrc = 'Rental.webp';
+const spaceRentalSrc = 'SpaceRental.webp';
+const lectureSrc = 'Lecture.webp';
+const experienceSrc = 'Experience.webp';
 
 export async function getStaticProps() {
  
