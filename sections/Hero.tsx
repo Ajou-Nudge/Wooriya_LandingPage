@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
                 </div>
 
 
-                <div className='mt-80 text-white flex justify-center flex-small-screen text-3xl '>우리모임 헤택을 확인해보세요</div>
+                <div className='mt-60 text-white flex justify-center flex-small-screen text-3xl '>우리모임 헤택을 확인해보세요</div>
                     <motion.div 
                     initial={{ y: 0 }}
                     animate={{ y: [12, 0, 12] }}
