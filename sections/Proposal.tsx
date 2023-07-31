@@ -20,8 +20,8 @@ const Proposal = () => {
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
-      const mobile = useMediaQuery({query: "(max-width: 1400px)"});
-      const pc = useMediaQuery({query: "(min-width:1401px)"})
+      const mobile = useMediaQuery({query: "(max-width: 1279px)"});
+      const pc = useMediaQuery({query: "(min-width:1280px)"})
       
       const remToPixels = (rem:number) : number => rem * rootFontSize;
 
@@ -58,42 +58,47 @@ const Proposal = () => {
               <motion.div
                 variants={fadeIn('up', 'tween', 0.3, 1)}
                 className='borderRadius32 backgroundLinearGradient color-Box'> 
-                  <div className='p-4'>
-                    <div>
-                      <div className='flex justify-center gap-1 mt-15'>
-                        <Image
-                          src="/logo.svg"
-                          width={60}
-                          height={60}
-                          alt="Wooriya logo"
-                          priority
-                        />
-                        <Image
-                          src="/wooriya.svg"
-                          width={300}
-                          height={300}
-                          alt="wooriya letters"
-                          priority
-                        />
-                      </div>
-            
-                      <div className='color-coolgray-cg-100 text-center mt-10 text-1xl'>모집 기간</div>
-                      <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>07.28(월)~08.07(월)까지</div>
-                      <div className='color-coolgray-cg-00 text-center text-4xl  mt-2'>사전혜택을 받을 수 있습니다.</div>
+                  <div className='flex flex-row justify-center ProposalSetmarginTop'>
+                    <div className='ProposalLogo'>
+                              <Image
+                                src="/logo.svg"
+                                width={0}
+                                height={0}
+                                alt="Wooriya logo"
+                                priority
+                                className='ProposalLogo'
+                              />
+                    </div>
+                    <div className='ProposalWooriya'>
+                             <Image
+                                src="/wooriya.svg"
+                                width={0}
+                                height={0}
+                                alt="wooriya letters"
+                                priority
+                                className='ProposalWooriya'
+                              />
+                    </div>
+                  </div>
+                  <div className='flex flex-col'>
+                      <div className='flex flex-col justify-center'>
+                      <div className='color-coolgray-cg-100 text-center ProposalMariginTop32 ProposalGrayFont'>모집 기간</div>
+                      <div className='color-coolgray-cg-00 text-center ProposalWhiteFont'>07.28(월)~08.07(월)까지</div>
+                      <div className='color-coolgray-cg-00 text-center ProposalWhiteFont'>사전혜택을 받을 수 있습니다.</div>
 
-                      <div className='color-coolgray-cg-100 text-center mt-10 text-1xl'>모집 대상</div>
-                      <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>10인이상 활동 단체</div>
-                      <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>(동아리, 동호회, 협회 등)</div>
+                      <div className='color-coolgray-cg-100 text-center ProposalMariginTop64 ProposalGrayFont'>모집 대상</div>
+                      <div className='color-coolgray-cg-00 text-center ProposalWhiteFont'>10인이상 활동 단체</div>
+                      <div className='color-coolgray-cg-00 text-center ProposalWhiteFont'>(동아리, 동호회, 협회 등)</div>
 
-                      <div className='color-coolgray-cg-100 text-center mt-10 text-1xl'>제휴처 연락 시기</div>
-                      <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>8월말 개별 연락</div>
+                      <div className='color-coolgray-cg-100 text-center ProposalMariginTop64 ProposalGrayFont'>제휴처 연락 시기</div>
+                      <div className='color-coolgray-cg-00 text-center ProposalWhiteFont'>8월말 개별 연락</div>
                     </div>
                   </div>
 
-                  <div className='items-center p-4 flex justify-center mt-10'>
+                  <div className='items-center p-4 flex justify-center ProposalMariginTop64'>
                     <CustomButton
                       ButtonStyle='border-radius-64 background-coolgray-800 flex justify-center button_container'
-                      FontStyle='color-coolgray-cg-00 text-center text-2xl'
+                      FontStyle='color-coolgray-cg-00 text-center button_font'
                       ButtonContent='바로 신청하기'
                       href='https://www.wooriya.com/'
                     ></CustomButton>
@@ -118,36 +123,42 @@ const Proposal = () => {
                 <motion.div 
                 variants={fadeIn('up', 'tween', 0.3, 1)}
                 className='borderRadius32 backgroundLinearGradient color-Box mt-20'>
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col Mobile_Proposal_margintop_32'>
                       <div className='flex gap-1 justify-center mt-15'>
-                              <Image
-                                src="/logo.svg"
-                                width={remToPixels(3)}
-                                height={remToPixels(3)}
-                                alt="Wooriya logo"
-                                priority
-                              />
-                              <Image
-                                src="/wooriya.svg"
-                                width={remToPixels(15)}
-                                height={remToPixels(15)}
-                                alt="wooriya letters"
-                                priority
-                              />
+                              <div className='Mobile_Proposal_logo mt-1'>
+                                <Image
+                                  src="/logo.svg"
+                                  width={0}
+                                  height={0}
+                                  alt="Wooriya logo"
+                                  priority
+                                  className='Mobile_Proposal_logo'
+                                />
+                              </div>
+                              <div className='Mobile_Proposal_wooriya'>
+                                <Image
+                                  src="/wooriya.svg"
+                                  width={0}
+                                  height={0}
+                                  alt="wooriya letters"
+                                  priority
+                                  className='Mobile_Proposal_wooriya'
+                                />
+                              </div>
                             </div>
-                            <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>모집 기간</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>07.28(월)~08.07(월)까지</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>사전혜택을 받을 수 있습니다.</div>
+                            <div className='color-coolgray-cg-100 text-center mt-10 Mobile_gray_fontsize'>모집 기간</div>
+                            <div className='color-coolgray-cg-00 text-center Mobile_white_fontsize Mobile_Proposal_margintop_8'>07.28(월)~08.07(월)까지</div>
+                            <div className='color-coolgray-cg-00 text-center Mobile_white_fontsize'>사전혜택을 받을 수 있습니다.</div>
 
-                            <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>모집 대상</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>10인이상 활동 단체</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>(동아리, 동호회, 협회 등)</div>
+                            <div className='color-coolgray-cg-100 text-center mt-10 Mobile_gray_fontsize'>모집 대상</div>
+                            <div className='color-coolgray-cg-00 text-center Mobile_white_fontsize Mobile_Proposal_margintop_8'>10인이상 활동 단체</div>
+                            <div className='color-coolgray-cg-00 text-center Mobile_white_fontsize'>(동아리, 동호회, 협회 등)</div>
 
-                            <div className='color-coolgray-cg-100 text-center mt-10 text-2xl'>제휴처 연락 시기</div>
-                            <div className='color-coolgray-cg-00 text-center text-4xl mt-2'>8월말 개별 연락</div>
+                            <div className='color-coolgray-cg-100 text-center mt-10 Mobile_gray_fontsize'>제휴처 연락 시기</div>
+                            <div className='color-coolgray-cg-00 text-center Mobile_white_fontsize Mobile_Proposal_margintop_8'>8월말 개별 연락</div>
                       </div>
 
-                    <div className='flex justify-center mt-20'>
+                    <div className='flex justify-center Mobile_Proposal_margintop_32'>
                       <CustomButton
                         ButtonStyle='border-radius-64 background-coolgray-800 flex justify-center black_button_container'
                         FontStyle='color-coolgray-cg-00 text-center text-3xl'

@@ -11,8 +11,8 @@ const Provide = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 1400px)"});
-  const pc = useMediaQuery({query: "(min-width:1401px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1279px)"});
+  const pc = useMediaQuery({query: "(min-width:1280px)"})
   
   useEffect(()=>{
             if(mobile) {
@@ -26,30 +26,28 @@ const Provide = () => {
   },[mobile,pc])
 
   return (
-    <section className='section_container' style={{ overflow: 'hidden' }}>
+    <section className='section_container'>
       {isPc && 
-      
-      <div className=''>
-        <div className='flex flex-row' >
-          <div className='flex flex-1 justify-end mr-5'>
+        <div className='flex flex-row'>
+          <div className='flex flex-1 justify-end provid-mr'>
                 <div className='flex flex-col provide-mt'>
                   <Title
                     SubTitleContent='우리야가 제공하는 서비스는?'
                     TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
                   />
-                  <div className="mt-4">
+                  <div className="ProvidButtonMarginTop">
                     <CustomButton
                       ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-                      FontStyle='text-primary text-center text-2xl font-bold'
+                      FontStyle='text-primary text-center button_font'
                       ButtonContent='다양한 혜택들 받기'
                       href='https://www.wooriya.com/'
                     />
                   </div>
                 </div>
           </div>
-        <div className='flex-1 ml-5'>
-              <div className='flex flex-row'>
-                    <div className=''>
+        <div className='flex-1 ml-5 foursquare-cardMarginTop'>
+              <div className='flex flex-row foursquare-card-gap'>
+                    <div className='flex flex-col foursquare-card-gap'>
                         
                         <div className=''>
                           <Foursquare
@@ -80,8 +78,8 @@ const Provide = () => {
                         </div>
               </div>
 
-              <div className=''>
-                        <div className='-mt-25'>
+              <div className='flex flex-col foursquare-mt foursquare-card-gap'>
+                        <div className=''>
                             <div className='foursquare-card'>
                                 <div className='image-container rounded-md'>
                                 <Image
@@ -121,7 +119,7 @@ const Provide = () => {
                 </div>
           </div>
           </div>
-      </div>
+   
       }
 
       {isMobile &&
@@ -133,44 +131,56 @@ const Provide = () => {
               TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는'
             />
           </div>
-          <p className="text-6xl font-bold mt-2 flex justify-center">다양한 업체</p>
+          <p className="Mobile_provier_font text-coolgray-cg-800 flex justify-center">다양한 업체</p>
           <div className="mt-6 flex justify-center">
             <CustomButton
-              ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-              FontStyle='text-primary text-center text-4xl font-bold'
+              ButtonStyle='rounded-md bg-blue-16 flex justify-center Mobile_Hero_button_container'
+              FontStyle='text-primary text-center Mobile_Hero_button_font'
               ButtonContent='우리 모임 확인하기'
               href='https://www.wooriya.com/'
             />
           </div>
         </div>
-        <div className='flex flex-col mt-40 gap-3' style={{ overflowX: 'hidden' }}>
-          <div className='flex flex-row justify-center gap-3' style={{ transform: 'translateX(25px)' }}>
+        <div className='flex flex-col mt-40 gap-3'>
+          <div className='flex flex-row justify-center gap-3'>
+            <div>
               <Foursquare
                     FoursquareName='의료'
                     FoursquareImage='/Doctor.webp'
               />
+            </div>
+            <div>
               <Foursquare
                     FoursquareName='행사'
                     FoursquareImage='/Festival.webp'
               />
+            </div>
+            <div>
               <Foursquare
                     FoursquareName='코칭'
                     FoursquareImage='/Coaching.webp'
               />
+            </div>
           </div> 
-          <div className='flex flex-row justify-center gap-3' style={{ transform: 'translateX(-25px)' }}>
+          <div className='flex flex-row justify-center gap-3'>
+            <div>
               <Foursquare
                     FoursquareName='경연'
                     FoursquareImage='/Lecture.webp'
               />
+            </div>
+            <div>
               <Foursquare
                     FoursquareName= '공간 대여'
                     FoursquareImage='/SpaceRental.webp'
               />
+            </div>
+            <div>
               <Foursquare
                     FoursquareName='데일리 체험'
                     FoursquareImage='/Experience.webp'
               />
+            </div>
           </div> 
         </div>
       </div>

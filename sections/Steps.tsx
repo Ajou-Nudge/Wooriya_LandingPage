@@ -12,8 +12,8 @@ const Steps = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 1400px)"});
-  const pc = useMediaQuery({query: "(min-width:1401px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1279px)"});
+  const pc = useMediaQuery({query: "(min-width:1280px)"})
   
   useEffect(()=>{
           if(mobile) {
@@ -62,7 +62,7 @@ const Steps = () => {
             <div className="mt-8">
               <CustomButton
                 ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-                FontStyle='text-primary text-center text-2xl font-bold'
+                FontStyle='text-primary text-center button_font'
                 ButtonContent='다양한 혜택들 받기'
                 href='https://www.wooriya.com/'
               />
@@ -78,8 +78,8 @@ const Steps = () => {
               />
             </div>
 
-            <div className=''>
-              <div className='flex justify-center mt-20 ml-6'>
+            <div className='ml-6'>
+              <div className='flex justify-center mt-20'>
                 <MiniStepCard
                   StepContent="STEP1. 우리 단체 등록하기"
                   ImageName="check-list.svg"
@@ -106,8 +106,8 @@ const Steps = () => {
 
             <div className="mt-20 flex justify-center">
               <CustomButton
-                ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-                FontStyle='text-primary text-center text-4xl font-bold'
+                ButtonStyle='rounded-md bg-blue-16 flex justify-center Mobile_Hero_button_container'
+                FontStyle='text-primary text-center Mobile_button_font'
                 ButtonContent='지금 신청하기'
                 href='https://www.wooriya.com/'
               />

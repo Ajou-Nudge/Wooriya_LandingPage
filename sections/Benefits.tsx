@@ -24,8 +24,8 @@ const Benefit: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({ query: "(max-width: 1400px)" });
-  const pc = useMediaQuery({ query: "(min-width:1401px)" })
+  const mobile = useMediaQuery({ query: "(max-width: 1279px)" });
+  const pc = useMediaQuery({ query: "(min-width:1280px)" })
 
   useEffect(() => {
     if (mobile) {
@@ -41,11 +41,10 @@ const Benefit: React.FC = () => {
   return (
     <section className='section_container bg-coolgray-cg-20' id="benefit-section">
       {isPc && <div>
-        <div className='flex flex-col items-center justify-center'>
-          <div className='text-5xl mt-40 font-bold'>구성원 모두가 누리는</div>
-          <div className='text-5xl mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>
+        <div className='flex flex-col items-center justify-center BenefitsStartMarginTop'>
+          <div className='BenefitsTextFont font-bold'>구성원 모두가 누리는</div>
+          <div className='BenefitsTextFont font-bold'>우리모임에 꼭 필요한 혜택들</div>
         </div>
-       
           <motion.div
             variants={staggerContainer(0.1, 0.2)}
             initial="hidden"
@@ -71,10 +70,10 @@ const Benefit: React.FC = () => {
           </motion.div>
         
 
-        <div className='flex justify-center mt-10'>
+        <div className='flex justify-center BenefitsButtonMarginTop'>
           <CustomButton
             ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-            FontStyle='text-primary text-center text-2xl font-bold'
+            FontStyle='text-primary text-center button_font '
             ButtonContent='다양한 혜택들 받기'
             href='https://www.wooriya.com/'
           />
@@ -85,8 +84,8 @@ const Benefit: React.FC = () => {
 
       {isMobile && (<div>
         <div className='flex flex-col items-center justify-center mt-start'>
-          <div className='text-5xl mt-head font-bold'>구성원 모두가 누리는</div>
-          <div className='text-5xl mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>
+          <div className='Mobile_provier_font mt-head font-bold'>구성원 모두가 누리는</div>
+          <div className='Mobile_provier_font mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>
         </div>
         <div className='flex flex-wrap justify-center mt-10 gap-6 font-bold text-4xl'>
           {cards.map((card, index) => (
@@ -102,7 +101,7 @@ const Benefit: React.FC = () => {
         <div className='flex justify-center mt-10'>
           <CustomButton
             ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
-            FontStyle='text-primary text-center text-4xl font-bold'
+            FontStyle='text-primary text-center Mobile_button_font'
             ButtonContent='다양한 혜택들 받기'
             href='https://www.wooriya.com/'
           />

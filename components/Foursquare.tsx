@@ -11,7 +11,7 @@ const Foursquare: React.FC<FoursquareProps> = ({
   FoursquareImage,
 }) => {
   return (
-    <div className='foursquare-card' >
+    <div className='foursquare-card'>
         <Image
           src={FoursquareImage}
           alt={`Wooriya ${FoursquareName}`}
