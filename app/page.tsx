@@ -1,12 +1,11 @@
 "use client"
-import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-const LazyHero = lazy(() => import('@/sections/Hero'));
-const LazyBenefit = lazy(() => import('@/sections/Benefits'));
-const LazyProvide = lazy(() => import('@/sections/Provide'));
-const LazySteps = lazy(() => import('@/sections/Steps'));
-const LazyProposal = lazy(() => import('@/sections/Proposal'));
-
+import Benefit from '@/sections/Benefits';
+import Hero from '@/sections/Hero';
+import Proposal from '@/sections/Proposal';
+import Provide from '@/sections/Provide';
+import Steps from '@/sections/Steps';
 
 const Home: React.FC = () => {
   const [scrollEnabled, setScrollEnabled] = useState(true); // Add this state variable
@@ -103,34 +102,34 @@ const Home: React.FC = () => {
           <section id="Hero" style={{ height: '100vh' }}>
             {/* Hero 섹션 컨텐츠 */}
             <Link to="Benefit" smooth={true} offset={0} duration={500} className="cursor-pointer">
-              <LazyHero/>
+              <Hero/>
             </Link>
           </section>
 
           <section id="Benefit" style={{ height: '100vh' }}>
             {/* Benefit 섹션 컨텐츠 */}
             <Link to="Provide" smooth={true} offset={0} duration={500} className="cursor-pointer">
-              <LazyBenefit/>
+              <Benefit/>
             </Link>
           </section>
 
           <section id="Provide" style={{ height: '100vh' }}>
             {/* Provide 섹션 컨텐츠 */}
             <Link to="Steps" smooth={true} offset={0} duration={500} className="cursor-pointer">
-              <LazyProvide/>
+              <Provide/>
             </Link>
           </section>
 
           <section id="Steps" style={{ height: '100vh' }}>
             {/* Steps 섹션 컨텐츠 */}
             <Link to="Proposal" smooth={true} offset={0} duration={500} className="cursor-pointer">
-              <LazySteps/>
+              <Steps/>
             </Link>
           </section>
 
           <section id="Proposal" style={{ height: '100vh' }}>
             <Link to="Hero" smooth={true} offset={0} duration={500} className="cursor-pointer">
-              <LazyProposal/>
+              <Proposal/>
             </Link>
           </section>
     </>
