@@ -124,8 +124,8 @@ const Provide = () => {
       }
 
       {isMobile &&
-      <div>
-        <div className='Mobile_startmargin'>
+      <div className='flex flex-col justify-center h-screen'>
+        <div>
           <div className='flex justify-center'>
             <MiniTitle
               SubTitleContent='우리야가 제공하는 서비스는?'

@@ -95,8 +95,8 @@ const Proposal = () => {
               </motion.div>
           </div>}
           
-          {isMobile && <div className='flex flex-col'>
-            <div className='flex justify-center mt-start'>
+          {isMobile && <div className='flex flex-col justify-center h-screen'>
+            <div className='flex justify-center'>
               <MiniTitle
                   SubTitleContent="우리야는 어떻게 신청해요?"
                   TitleContent="지금 바로 우리가 원하는/ 제휴처를 만나 Win-Win해요"

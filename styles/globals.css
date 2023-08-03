@@ -506,7 +506,7 @@ html{
 
 @media screen  and (min-width: 360px ) and (max-width: 389px){
     html{
-        font-size: 45%;  
+        font-size: 42%;  
     }
     .foursquare-card {
         width: 17.1rem; /* 기본 카드 크기 */
@@ -549,6 +549,9 @@ html{
 /* 480 */
 
 @media screen  and (min-width: 390px ) and (max-width: 480px){
+    html{
+        font-size: 44%;  
+    }
       /* 기본 카드 스타일 */
   .foursquare-card {
     width: 17.1rem; /* 기본 카드 크기 */

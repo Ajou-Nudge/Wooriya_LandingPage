@@ -70,8 +70,8 @@ const Steps = () => {
         </div>
       </div>}
 
-      {isMobile && <div>
-            <div className='flex justify-center Mobile_startmargin'>
+      {isMobile && <div className='flex flex-col justify-center h-screen'> 
+            <div className='flex justify-center'>
               <MiniTitle
                 SubTitleContent="우리야에서 제휴를 맺으려면?"
                 TitleContent="단체 등록으로 제공되는/ 우리가 찾던 서비스와 혜택"
