@@ -512,6 +512,22 @@ html{
     html{
         font-size: 50%;  
     }
+    .card_container{
+        width: 15rem;
+        height: 15rem;
+      
+    }
+    .cardImage{
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        
+    }
+    .cardFont{
+        font-size: 1.8rem;
+        line-height: normal;
+    }
+
     .foursquare-card {
         width: 17.1rem; /* 기본 카드 크기 */
         height: 17.1rem;
