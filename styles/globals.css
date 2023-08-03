@@ -508,7 +508,7 @@ html{
     }
 }
 
-@media screen  and (min-width: 360px ) and (max-width: 389px){
+@media screen and (min-width: 360px ) and (max-width: 389px){
     html{
         font-size: 50%;  
     }
