@@ -1,9 +1,10 @@
+"use client"
 import Card from '@/components/Card';
 import CustomButton from '@/components/CustomButton';
 import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from "react-responsive"
 import { motion } from 'framer-motion';
-import { fadeIn, staggerContainer, cardVariants } from '../utils/motion';
+import { useInView } from 'react-intersection-observer';
 
 interface CardData {
   ImageName: string;
@@ -23,9 +24,14 @@ const Benefit: React.FC = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
+  
+  const mobile = useMediaQuery({ query: "(max-width: 1199px)" });
+  const pc = useMediaQuery({ query: "(min-width:1200px)" })
 
-  const mobile = useMediaQuery({ query: "(max-width: 1279px)" });
-  const pc = useMediaQuery({ query: "(min-width:1280px)" })
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false, // 한 번만 감지하고 그 이후로는 무시
+    threshold: 0.5, // 요소가 뷰포트의 25% 이상 노출되면 감지
+  });
 
   useEffect(() => {
     if (mobile) {
@@ -40,25 +46,19 @@ const Benefit: React.FC = () => {
 
   return (
     <section className='section_container bg-coolgray-cg-20' id="benefit-section">
-      {isPc && <div>
+      {isPc && <div className='bg-coolgray-cg-20 flex flex-col '>
         <div className='flex flex-col items-center justify-center BenefitsStartMarginTop'>
           <div className='BenefitsTextFont font-bold'>구성원 모두가 누리는</div>
           <div className='BenefitsTextFont font-bold'>우리모임에 꼭 필요한 혜택들</div>
         </div>
-          <motion.div
-            variants={staggerContainer(0.1, 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-            className='flex justify-center mt-10 gap-8'
-          >
+          <div className='flex justify-center Benefits64 gap-5'>
             {cards.map((card, index) => (
               <motion.div
                 key={index}
-                variants={cardVariants}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50, y: index % 2 === 0 ? -50 : 50 }}
-                transition={{ type: "spring", stiffness: 200, damping: 20, delay: index * 0.1 }}
-                className="flex flex-col items-center"
+                ref={inViewRef}
+                initial={{ y: 0 }}
+                animate={{ y: inView ? index % 2 === 0 ? '-3rem' : '3rem' : 0 }} // 뷰포트 안에 들어오면 y값을 0으로 되돌려 원래 위치로 이동
+                transition={{ duration: 0.5, delay: index * 0.1 }} // 애니메이션 지속 시간과 요소들 사이의 지연 시간 설정
               >
                 <Card
                   ImageName={card.ImageName}
@@ -67,10 +67,10 @@ const Benefit: React.FC = () => {
                 />
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         
 
-        <div className='flex justify-center BenefitsButtonMarginTop'>
+        <div className='flex justify-center Benefits128'>
           <CustomButton
             ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
             FontStyle='text-primary text-center button_font '
@@ -83,7 +83,7 @@ const Benefit: React.FC = () => {
       }
 
       {isMobile && (<div>
-        <div className='flex flex-col items-center justify-center mt-start'>
+        <div className='flex flex-col items-center justify-center Mobile_benebit_start_margintop'>
           <div className='Mobile_provier_font mt-head font-bold'>구성원 모두가 누리는</div>
           <div className='Mobile_provier_font mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>
         </div>

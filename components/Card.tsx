@@ -1,6 +1,7 @@
 // Card.tsx
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion'
 
 interface CardProps {
   ImageName: string;
@@ -26,14 +27,17 @@ const Card: React.FC<CardProps> = ({
       className={`rounded-lg bg-coolgray-cg-00 custom-box-shadow flex flex-col items-center justify-center card_container ${classNameFromStyle(index)}`}
       style={CardStyle}
     >
-      <div className='cardImage'>
+      <motion.div
+        whileHover={{ y: "-4rem", scale: 1.2 }}
+        transition={{ duration: 0.3 }}
+       className='cardImage'>
         <Image
           src={`/${ImageName}`}
           fill
           alt={`/Wooriya ${ImageName}`}
           priority
         />
-      </div>
+      </motion.div>
       <div className='flex flex-col cardFont'>
         <div className='text-coolgray-cg-700 text-center mt-2'>
           {CardContent}

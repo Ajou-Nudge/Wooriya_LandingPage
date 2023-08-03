@@ -12,8 +12,8 @@ const Steps = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 1279px)"});
-  const pc = useMediaQuery({query: "(min-width:1280px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1199px)"});
+  const pc = useMediaQuery({query: "(min-width:1200px)"})
   
   useEffect(()=>{
           if(mobile) {
@@ -71,15 +71,15 @@ const Steps = () => {
       </div>}
 
       {isMobile && <div>
-            <div className='flex justify-center mt-start'>
+            <div className='flex justify-center Mobile_startmargin'>
               <MiniTitle
                 SubTitleContent="우리야에서 제휴를 맺으려면?"
                 TitleContent="단체 등록으로 제공되는/ 우리가 찾던 서비스와 혜택"
               />
             </div>
 
-            <div className='ml-6'>
-              <div className='flex justify-center mt-20'>
+            <div className='ml-6 Mobile_Step_Stepcard_16'>
+              <div className='flex justify-center'>
                 <MiniStepCard
                   StepContent="STEP1. 우리 단체 등록하기"
                   ImageName="check-list.svg"

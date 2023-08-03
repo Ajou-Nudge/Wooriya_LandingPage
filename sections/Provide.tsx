@@ -11,8 +11,8 @@ const Provide = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 1279px)"});
-  const pc = useMediaQuery({query: "(min-width:1280px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1199px)"});
+  const pc = useMediaQuery({query: "(min-width:1200px)"})
   
   useEffect(()=>{
             if(mobile) {
@@ -28,9 +28,9 @@ const Provide = () => {
   return (
     <section className='section_container'>
       {isPc && 
-        <div className='flex flex-row'>
+        <div className='flex flex-row h-screen'>
           <div className='flex flex-1 justify-end provid-mr'>
-                <div className='flex flex-col provide-mt'>
+                <div className='flex flex-col justify-center'>
                   <Title
                     SubTitleContent='우리야가 제공하는 서비스는?'
                     TitleContent='우리야는 우리 모임의/ 활동과 특성에 알맞는/ 다양한 업체'
@@ -44,8 +44,9 @@ const Provide = () => {
                     />
                   </div>
                 </div>
+                
           </div>
-        <div className='flex-1 ml-5 foursquare-cardMarginTop'>
+        <div className='flex-1 foursquare-cardMarginTop'>
               <div className='flex flex-row foursquare-card-gap'>
                     <div className='flex flex-col foursquare-card-gap'>
                         
@@ -124,7 +125,7 @@ const Provide = () => {
 
       {isMobile &&
       <div>
-        <div className='mt-start'>
+        <div className='Mobile_startmargin'>
           <div className='flex justify-center'>
             <MiniTitle
               SubTitleContent='우리야가 제공하는 서비스는?'

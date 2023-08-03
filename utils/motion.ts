@@ -52,7 +52,7 @@ export const staggerContainer = (
   
   export const cardVariants = {
     hidden: ({ index }: CardVariantsProps) => ({
-      opacity: 0,
+      opacity: 1,
       x: index % 2 === 0 ? -50 : 50,
       y: index % 2 === 0 ? -50 : 50,
     }),

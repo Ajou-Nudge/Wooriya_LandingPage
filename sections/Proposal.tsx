@@ -20,10 +20,8 @@ const Proposal = () => {
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
-      const mobile = useMediaQuery({query: "(max-width: 1279px)"});
-      const pc = useMediaQuery({query: "(min-width:1280px)"})
-      
-      const remToPixels = (rem:number) : number => rem * rootFontSize;
+      const mobile = useMediaQuery({query: "(max-width: 1199px)"});
+      const pc = useMediaQuery({query: "(min-width:1200px)"})
 
       useEffect(()=>{
           if(mobile) {
@@ -39,8 +37,8 @@ const Proposal = () => {
       return (
         <section className='section_container'>
           {isPc && 
-          <div className='flex'>
-              <div className='flex flex-1 justify-center'>
+          <div className='flex h-screen'>
+              <div className='flex flex-1 justify-end Proposalleft'>
                 <div className='flex flex-col justify-center'>
                     <Title
                       SubTitleContent="우리야는 어떻게 신청해요?"
@@ -54,24 +52,14 @@ const Proposal = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
-              className='flex flex-1 mt-start'>
+              className='flex flex-1 items-center'>
               <motion.div
                 variants={fadeIn('up', 'tween', 0.3, 1)}
-                className='borderRadius32 backgroundLinearGradient color-Box'> 
+                className='borderRadius32 backgroundLinearGradient color-Box flex flex-col justify-center'> 
                   <div className='flex flex-row justify-center ProposalSetmarginTop'>
-                    <div className='ProposalLogo'>
-                              <Image
-                                src="/logo.svg"
-                                width={0}
-                                height={0}
-                                alt="Wooriya logo"
-                                priority
-                                className='ProposalLogo'
-                              />
-                    </div>
                     <div className='ProposalWooriya'>
                              <Image
-                                src="/wooriya.svg"
+                                src="/logowooriya.svg"
                                 width={0}
                                 height={0}
                                 alt="wooriya letters"
@@ -122,27 +110,17 @@ const Proposal = () => {
             className='flex justify-center'>
                 <motion.div 
                 variants={fadeIn('up', 'tween', 0.3, 1)}
-                className='borderRadius32 backgroundLinearGradient color-Box mt-20'>
+                className='borderRadius32 backgroundLinearGradient color-Box Mobile_Step_Stepcard_32'>
                   <div className='flex flex-col Mobile_Proposal_margintop_32'>
                       <div className='flex gap-1 justify-center mt-15'>
                               <div className='Mobile_Proposal_logo mt-1'>
                                 <Image
-                                  src="/logo.svg"
+                                  src="/logowooriya.svg"
                                   width={0}
                                   height={0}
                                   alt="Wooriya logo"
                                   priority
                                   className='Mobile_Proposal_logo'
-                                />
-                              </div>
-                              <div className='Mobile_Proposal_wooriya'>
-                                <Image
-                                  src="/wooriya.svg"
-                                  width={0}
-                                  height={0}
-                                  alt="wooriya letters"
-                                  priority
-                                  className='Mobile_Proposal_wooriya'
                                 />
                               </div>
                             </div>
@@ -166,7 +144,6 @@ const Proposal = () => {
                         href='https://www.wooriya.com/'
                       ></CustomButton>
                     </div>
-
                   </motion.div>
             </motion.div>    
         </div>}

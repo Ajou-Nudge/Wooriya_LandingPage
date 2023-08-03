@@ -10,8 +10,8 @@ const Hero: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isPc, setIsPc] = useState(false);
 
-    const mobile = useMediaQuery({query: "(max-width: 1279px)"});
-    const pc = useMediaQuery({query: "(min-width:1280px)"})
+    const mobile = useMediaQuery({query: "(max-width: 1199px)"});
+    const pc = useMediaQuery({query: "(min-width:1200px)"})
     
     useEffect(()=>{
         if(mobile) {
@@ -31,7 +31,6 @@ const Hero: React.FC = () => {
     return (
         <section className="section_container">
             <Image
-                className='hero-container'
                 src="/Herobackground.webp"
                 alt="Herobackground"
                 layout='fill'
@@ -43,7 +42,7 @@ const Hero: React.FC = () => {
                <div className='flex flex-row justify-center gap-2 HeroStartMarginTop'>
                     <div className='HeroLogo'>
                         <Image
-                            src="/logo.svg"
+                            src="/logowooriya.svg"
                             alt="Wooriya logo"
                             width={0}
                             height={0}
@@ -51,18 +50,8 @@ const Hero: React.FC = () => {
                             className='HeroLogo'
                         />
                     </div>
-                    <div className='HeroWooriyaFont'>
-                        <Image
-                        src="/wooriya.svg"
-                        alt="wooriya letters"
-                        width={0}
-                        height={0}
-                        priority
-                        className='HeroWooriyaFont'
-                        />
-                    </div>
                </div>
-                 <div className='mt-20 font-bold HeroWord1'>
+                 <div className='HeroBetween1 font-bold HeroWord1'>
                     <div className='text-white flex justify-center'>
                         다양한 제휴와 혜택으로
                     </div>
@@ -74,7 +63,7 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
                     
-                <div className='flex justify-center mt-20'>
+                <div className='flex justify-center HeroBetween2'>
                     <CustomButton 
                         ButtonStyle="flex justify-center gap-8 Hero_button_container border-2 border-coolgray-cg-00 rounded-full"
                         FontStyle="text-white HeroWord2"
@@ -172,7 +161,6 @@ const Hero: React.FC = () => {
                         </Link>
                     </motion.div>
            </div>}
-           
         </section>
     );
     };
