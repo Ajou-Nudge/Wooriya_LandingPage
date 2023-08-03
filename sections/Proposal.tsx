@@ -20,8 +20,8 @@ const Proposal = () => {
       const [isMobile, setIsMobile] = useState(false);
       const [isPc, setIsPc] = useState(false);
 
-      const mobile = useMediaQuery({query: "(max-width: 1199px)"});
-      const pc = useMediaQuery({query: "(min-width:1200px)"})
+      const mobile = useMediaQuery({query: "(max-width: 1200px)"});
+      const pc = useMediaQuery({query: "(min-width:1201px)"})
 
       useEffect(()=>{
           if(mobile) {

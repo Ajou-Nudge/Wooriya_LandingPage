@@ -25,8 +25,8 @@ const Benefit: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
   
-  const mobile = useMediaQuery({ query: "(max-width: 1199px)" });
-  const pc = useMediaQuery({ query: "(min-width:1200px)" })
+  const mobile = useMediaQuery({ query: "(max-width: 1200px)" });
+  const pc = useMediaQuery({ query: "(min-width:1201px)" })
 
   const [inViewRef, inView] = useInView({
     triggerOnce: false, // 한 번만 감지하고 그 이후로는 무시
@@ -46,8 +46,8 @@ const Benefit: React.FC = () => {
 
   return (
     <section className='section_container bg-coolgray-cg-20' id="benefit-section">
-      {isPc && <div className='bg-coolgray-cg-20 flex flex-col '>
-        <div className='flex flex-col items-center justify-center BenefitsStartMarginTop'>
+      {isPc && <div className='bg-coolgray-cg-20 flex flex-col justify-center h-screen'>
+        <div className='flex flex-col items-center justify-center'>
           <div className='BenefitsTextFont font-bold'>구성원 모두가 누리는</div>
           <div className='BenefitsTextFont font-bold'>우리모임에 꼭 필요한 혜택들</div>
         </div>
@@ -82,7 +82,7 @@ const Benefit: React.FC = () => {
       </div>
       }
 
-      {isMobile && (<div className='flex flex-col justify-center h-screen'>
+      {isMobile && (<div className='flex flex-col justify-center items-center h-screen'>
         <div className='flex flex-col items-center justify-center'>
           <div className='Mobile_provier_font mt-head font-bold'>구성원 모두가 누리는</div>
           <div className='Mobile_provier_font mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>

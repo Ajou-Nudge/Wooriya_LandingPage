@@ -84,11 +84,11 @@ html{
 }
 
 .HeroBetween1{
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .HeroBetween2{
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 
 .HeroWord1{
@@ -425,11 +425,15 @@ html{
 }
 
 .Mobile_Step_Stepcard_16{
-    margin-top: 1.8rem;
+    margin-top: 1.6vh;
 }
 
 .Mobile_Step_Stepcard_32{
     margin-top: 3.2rem;
+}
+
+.Mobile_Provide_between1{
+    margin-top: 5vh;
 }
 
 .Mobile_Proposal_margintop_32{
@@ -506,7 +510,7 @@ html{
 
 @media screen  and (min-width: 360px ) and (max-width: 389px){
     html{
-        font-size: 42%;  
+        font-size: 50%;  
     }
     .foursquare-card {
         width: 17.1rem; /* 기본 카드 크기 */
@@ -550,7 +554,7 @@ html{
 
 @media screen  and (min-width: 390px ) and (max-width: 480px){
     html{
-        font-size: 44%;  
+        font-size: 60%;  
     }
       /* 기본 카드 스타일 */
   .foursquare-card {
@@ -681,7 +685,7 @@ html{
 
 @media screen  and (min-width: 961px ) and (max-width: 1200px){
     html{
-        font-size: 90%;  
+        font-size: 65%;  
     }
 
     .foursquare-card {

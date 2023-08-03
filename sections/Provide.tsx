@@ -11,8 +11,8 @@ const Provide = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isPc, setIsPc] = useState(false);
 
-  const mobile = useMediaQuery({query: "(max-width: 1199px)"});
-  const pc = useMediaQuery({query: "(min-width:1200px)"})
+  const mobile = useMediaQuery({query: "(max-width: 1200px)"});
+  const pc = useMediaQuery({query: "(min-width:1201px)"})
   
   useEffect(()=>{
             if(mobile) {
@@ -142,7 +142,7 @@ const Provide = () => {
             />
           </div>
         </div>
-        <div className='flex flex-col mt-40 gap-3'>
+        <div className='flex flex-col Mobile_Provide_between1 gap-3'>
           <div className='flex flex-row justify-center gap-3'>
             <div>
               <Foursquare
