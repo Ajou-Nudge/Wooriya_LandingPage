@@ -75,7 +75,7 @@ const Benefit: React.FC = () => {
             ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
             FontStyle='text-primary text-center button_font '
             ButtonContent='다양한 혜택들 받기'
-            href='https://www.wooriya.com/'
+            href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
           />
         </div>
 
@@ -103,7 +103,7 @@ const Benefit: React.FC = () => {
             ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
             FontStyle='text-primary text-center Mobile_button_font'
             ButtonContent='다양한 혜택들 받기'
-            href='https://www.wooriya.com/'
+            href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
           />
         </div>
       </div>)}

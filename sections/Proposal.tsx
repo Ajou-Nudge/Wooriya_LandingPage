@@ -88,7 +88,7 @@ const Proposal = () => {
                       ButtonStyle='border-radius-64 background-coolgray-800 flex justify-center button_container'
                       FontStyle='color-coolgray-cg-00 text-center button_font'
                       ButtonContent='바로 신청하기'
-                      href='https://www.wooriya.com/'
+                      href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
                     ></CustomButton>
                  </div>
               </motion.div>    
@@ -141,7 +141,7 @@ const Proposal = () => {
                         ButtonStyle='border-radius-64 background-coolgray-800 flex justify-center black_button_container'
                         FontStyle='color-coolgray-cg-00 text-center text-3xl'
                         ButtonContent='바로 신청하기'
-                        href='https://www.wooriya.com/'
+                        href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
                       ></CustomButton>
                     </div>
                   </motion.div>

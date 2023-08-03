@@ -40,7 +40,7 @@ const Provide = () => {
                       ButtonStyle='rounded-md bg-blue-16 flex justify-center button_container'
                       FontStyle='text-primary text-center button_font'
                       ButtonContent='다양한 혜택들 받기'
-                      href='https://www.wooriya.com/'
+                      href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
                     />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Provide = () => {
               ButtonStyle='rounded-md bg-blue-16 flex justify-center Mobile_Hero_button_container'
               FontStyle='text-primary text-center Mobile_Hero_button_font'
               ButtonContent='우리 모임 확인하기'
-              href='https://www.wooriya.com/'
+              href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
             />
           </div>
         </div>

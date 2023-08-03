@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
                         ButtonStyle="flex justify-center gap-8 Hero_button_container border-2 border-coolgray-cg-00 rounded-full"
                         FontStyle="text-white HeroWord2"
                         ButtonContent="사전신청 혜택받기"
-                        href='https://www.wooriya.com/'
+                        href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
                     ></CustomButton>
                 </div>
                 <div className='HeroEndMarginTop text-white flex justify-center HeroWord2'>우리모임 혜택을 확인해보세요</div>
@@ -139,7 +139,7 @@ const Hero: React.FC = () => {
                         ButtonStyle="flex justify-center gap-8 Mobile_Hero_button_container border-2 border-coolgray-cg-00 rounded-full"
                         FontStyle="text-white Mobile_Hero_button_font"
                         ButtonContent="사전신청 혜택받기"
-                        href='https://www.wooriya.com/'
+                        href='https://by1go71xvc6.typeform.com/to/XfhA8AkT'
                     ></CustomButton>
                 </div>
 
