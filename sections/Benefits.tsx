@@ -82,7 +82,7 @@ const Benefit: React.FC = () => {
       </div>
       }
 
-      {isMobile && (<div className='flex flex-col justify-center items-center h-screen'>
+      {isMobile && (<div className='flex flex-col items-center Mobile_start_maring h-screen'>
         <div className='flex flex-col items-center justify-center'>
           <div className='Mobile_provier_font mt-head font-bold'>구성원 모두가 누리는</div>
           <div className='Mobile_provier_font mt-2 font-bold'>우리모임에 꼭 필요한 혜택들</div>
