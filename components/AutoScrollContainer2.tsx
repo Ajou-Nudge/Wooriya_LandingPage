@@ -29,6 +29,13 @@ const AutoScrollContainer: React.FC = ({ }) => {
           animate={controls as AnimationControls}
         >
           <div className='flex flex-row justify-center gap-3'>
+           <div className=''>
+                  <Foursquare
+                    FoursquareName='장비 대여'
+                    FoursquareImage='/Rental.webp'
+                  />
+            </div>
+
             <div>
               <Foursquare
                     FoursquareName='경연'

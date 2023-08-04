@@ -28,12 +28,12 @@ const AutoScrollContainer: React.FC = ({ }) => {
           animate={controls as AnimationControls}
         >
           <div className='flex flex-col foursquare-card-gap'>
-            {/* <div className=''>
+            <div className=''>
                   <Foursquare
                     FoursquareName='장비 대여'
                     FoursquareImage='/Rental.webp'
                   />
-                </div> */}
+            </div>
 
             <div className=''>
               <Foursquare
