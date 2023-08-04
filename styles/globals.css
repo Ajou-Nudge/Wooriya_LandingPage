@@ -465,6 +465,9 @@ html{
     height: 3.3rem;
 }
 
+.Mobile_Provide_ml{
+    margin-left: -18rem;
+}
 
 /* 320 */
 
@@ -542,7 +545,7 @@ html{
         transform: translate(-50%, -50%);
         font-weight: bold;
         color: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
         z-index: 1;
       }
     
@@ -748,6 +751,24 @@ html{
     .ProposalSetmarginTop{
         margin-top: 6rem;
     }
+
+    .foursquare-card {
+        width: 19vw; /* 기본 카드 크기 */
+        height: 32vh;
+        border-radius: 3.2rem; /* 카드 테두리 둥글게 처리 */
+        overflow: hidden; /* 카드 영역을 넘어간 이미지 숨김 */
+      }
+    
+      .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: white;
+        font-size: 2rem;
+        z-index: 1;
+      }
 }
 
 @media screen  and (min-width: 1601px ) and (max-width: 1800px) {

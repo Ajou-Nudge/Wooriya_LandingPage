@@ -21,7 +21,7 @@ const AutoScrollContainer: React.FC = ({ }) => {
 
 
   return (
-    <motion.div className='flex flex-row justify-center gap-3'>
+    <motion.div className='flex flex-row justify-center Mobile_Provide_ml gap-3'>
       {infinite.map(() => (
         <motion.div
           className="scroll-item"

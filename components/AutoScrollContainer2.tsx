@@ -5,7 +5,7 @@ import Foursquare from "./Foursquare";
 
 const AutoScrollContainer: React.FC = ({ }) => {
   const controls = useAnimation();
-  const scrollSpeed = 2000;
+  const scrollSpeed = 2200;
   const infinite: any = new Array(60).fill(1);
 
   useEffect(() => {
